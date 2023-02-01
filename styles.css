@@ -1,0 +1,138 @@
+body{
+    margin:0px;
+}
+.strip{
+    height:10px;
+    width:100%;
+    background-color: rgb(199,164,60);
+}
+/*MENU SETTINGS-------------------------------------------------------------------------------------------------------------------------------------------------*/
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    width:100%;
+    margin:5px;
+    padding:0px;
+}
+
+li{
+    width:100px;
+    padding:10px;
+    margin-left:10px;
+    margin-right:10px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    color:rgb(199,164,60);
+}
+a{
+    text-decoration: none;
+}
+li:hover{
+    animation: border 0.5s forwards ease-in-out;
+    border-radius: 25%;
+}
+@keyframes border {
+    0%{border:2px solid transparent}
+    20%{border:2px solid rgb(199,164,60);}
+    100%{border:2px solid transparent;}
+}
+.selected{
+    border:2px solid rgb(199,164,60);
+    border-radius: 25%;
+}
+
+/*SIDEBAR ANIMATION-------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+#header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 50px;
+    transition: .4s;
+}
+#header.dolu{
+    margin-bottom: 300px;
+    transition: .4s;
+}
+#sidebar{
+    display: flex;
+    justify-content: center;
+    height:auto;
+    width:100%;
+    background: transparent;
+    position: absolute;
+    top: -230px;
+    transition: .4s;
+}
+
+#sidebar.active{
+    top:10px;   
+}
+
+
+#toggle-btn span{
+    width: 45px;
+    height: 4px;
+    background: black;
+    display: block;
+    margin-top:4px;
+}
+#toggle-btn{
+    position: absolute;
+    top: 20px;
+    transition: .4s;
+}
+#toggle-btn.posun{
+    position: absolute;
+    top: 260px;
+}
+/*MEDIA QUERIES-------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width:901px) and (max-width:1200px){
+    ul{      
+        flex-direction: row;        
+    }
+    #header.dolu{
+        margin-bottom: 100px;
+        transition: .4s;
+    }
+    #sidebar.active{
+        top:10px;
+        height: 50px;
+    }
+    #sidebar{
+        height:70px;
+    }
+    #toggle-btn.posun{
+        position: absolute;
+        top: 70px;
+    }
+
+}
+@media screen and (min-width:1201px){
+    #toggle-btn{
+        background: transparent;
+        width:0px;
+        height:0px;
+    }
+    #toggle-btn span{
+        background: transparent;
+
+    }
+    #sidebar{
+        top: 10px;
+        height:200px;
+
+    }
+    ul{
+        flex-direction: row;
+    }
+    header{
+        height:150px;
+        margin: 0px;
+    }
+}
