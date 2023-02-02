@@ -6,7 +6,40 @@ body{
     width:100%;
     background-color: rgb(199,164,60);
 }
+.logo_menu_pic{
+    height:100px;
+    width:100px;
+}
 /*MENU SETTINGS-------------------------------------------------------------------------------------------------------------------------------------------------*/
+.menu-icon-left{
+    margin-right:20px;
+}
+.menu-icon-right{
+    margin-left:20px;
+}
+.logo-menu{
+    width:100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right:20px;
+}
+.logo-nav{
+    display: flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+}
+.kontakt-menu{
+    width:100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left:20px;
+    font-size:13px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(178,178,178);
+}
 ul{
     display: flex;
     justify-content: center;
@@ -30,19 +63,28 @@ li{
 }
 a{
     text-decoration: none;
+    color: rgb(178,178,178);
 }
-li:hover{
-    animation: border 0.5s forwards ease-in-out;
-    border-radius: 25%;
+.larger{
+    animation: larger 0.3s forwards ease-in-out;
+    border-radius: 5%;
 }
-@keyframes border {
-    0%{border:2px solid transparent}
-    20%{border:2px solid rgb(199,164,60);}
-    100%{border:2px solid transparent;}
+.shrink{
+    animation: shrink 0.3s forwards ease-in-out;
+    border-radius: 5%;
+}
+
+@keyframes larger {
+    0%{scale:1;}
+    100%{scale:1.2;}
+}
+@keyframes shrink {
+    0%{scale:1.2;}
+    100%{scale:1;}
 }
 .selected{
-    border:2px solid rgb(199,164,60);
-    border-radius: 25%;
+    border-bottom:2px solid rgb(199,164,60);
+    border-radius: 0px;
 }
 
 /*SIDEBAR ANIMATION-------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -58,9 +100,11 @@ li:hover{
 #header.dolu{
     margin-bottom: 300px;
     transition: .4s;
+    height:200px;
 }
 #sidebar{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     height:auto;
     width:100%;
@@ -71,14 +115,14 @@ li:hover{
 }
 
 #sidebar.active{
+    flex-direction: row;
     top:10px;   
 }
-
 
 #toggle-btn span{
     width: 45px;
     height: 4px;
-    background: black;
+    background: rgb(199,164,60);
     display: block;
     margin-top:4px;
 }
@@ -91,29 +135,148 @@ li:hover{
     position: absolute;
     top: 260px;
 }
+/*CONTENT-------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.landscape-background{
+    display: flex;
+    justify-content: center;
+    width:100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url("vinarstvi/krajina.png"); 
+    background-color: black;
+    height:540px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.text-krajina{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top:50px;
+    width:60%;
+    
+}
+.krajina1{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: rgb(199,164,60,0.7);
+    padding:10px;
+    font-size:40px;  
+
+
+}
+.krajina2{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding:10px;
+    text-align: right;
+
+}
+
+
 /*MEDIA QUERIES-------------------------------------------------------------------------------------------------------------------------------------------------*/
-@media screen and (min-width:901px) and (max-width:1200px){
+@media screen and (max-width:1000px){
     ul{      
-        flex-direction: row;        
+        flex-direction: column;        
     }
+ 
     #header.dolu{
-        margin-bottom: 100px;
-        transition: .4s;
+        flex-direction: row;
+        align-items: flex-end;
+        max-height: 20px;
+        height:100%;
+        overflow: visible;
+        margin-bottom: 450px;
     }
     #sidebar.active{
-        top:10px;
+        flex-direction: column;
+        top:220px;
         height: 50px;
+    }
+    
+    #toggle-btn.posun{
+        position: absolute;
+        top: 420px;
+    }
+
+    .logo-menu{
+        width:100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding-bottom:0px;
     }
     #sidebar{
         height:70px;
+        flex-direction: column;
     }
+    .kontakt-menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left:0px;
+        width: 100%;
+    }
+    #header{
+        flex-direction: row;
+        align-items: center;
+    }
+    /*MENU OVER-------------------------------------------------------------------------------------------------------------------------------------------------*/
+}
+@media screen and (min-width:1001px) and (max-width:1300px){
+    ul{      
+        flex-direction: row;        
+    }
+ 
+    #header.dolu{
+        flex-direction: row;
+        align-items: flex-end;
+        max-height: 20px;
+        height:100%;
+        overflow: visible;
+        margin-bottom: 230px;
+    }
+    #sidebar.active{
+        flex-direction: column;
+        top:110px;
+        height: 50px;
+    }
+    
     #toggle-btn.posun{
         position: absolute;
-        top: 70px;
+        top: 200px;
     }
 
+    .logo-menu{
+        width:100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding-bottom:0px;
+    }
+    #sidebar{
+        height:70px;
+        flex-direction: column;
+    }
+    .kontakt-menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left:20px;
+        width: 100%;
+    }
+    #header{
+        flex-direction: row;
+        align-items: center;
+        
+    }
+    /*MENU OVER-------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+    
+
 }
-@media screen and (min-width:1201px){
+@media screen and (min-width:1301px){
     #toggle-btn{
         background: transparent;
         width:0px;
@@ -125,14 +288,41 @@ li:hover{
     }
     #sidebar{
         top: 10px;
-        height:200px;
+        height:150px;
+        transition: 0s;
 
+    }
+    .kontakt-menu{
+        padding-left: 0px;
+        align-items: flex-start; 
+        transform: translateY(-25px);
+        transform: translateX(-200px);
+        height:30%;
+        margin-top:10px;        
     }
     ul{
         flex-direction: row;
     }
-    header{
+    #header{
         height:150px;
         margin: 0px;
+        transition: 0s;
     }
+    #header.dolu{
+        margin-bottom:0px;
+        height:150px;
+        transition: 0s;
+    }
+    .logo-nav{
+        transform: translateX(50px);
+    }
+    .logo-menu{
+        transform: translateX(50px);
+    }
+    /*MENU OVER-------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
 }
