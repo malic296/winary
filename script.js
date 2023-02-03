@@ -7,6 +7,13 @@ function move(){
 function btn(){
     document.getElementById('toggle-btn').classList.toggle('posun');
 }
+function krajina(){
+    document.getElementById('text-krajina').classList.toggle('krajinaPosun');
+}
+
+
+
+
 function shrink1(){
     document.getElementById('menu-item-id1').classList.toggle('shrink');
     document.getElementById('menu-item-id1').classList.remove('larger');
@@ -62,4 +69,52 @@ function shrink7(){
 function larger7(){
     document.getElementById('menu-item-id7').classList.toggle('larger');
     document.getElementById('menu-item-id7').classList.remove('shrink');
+}
+
+
+function cernazlata1(){
+    document.getElementById('nav3-1').classList.toggle('aBigger');
+    document.getElementById('nav3-1').classList.remove('aSmaller');
+
+    document.getElementById('nav1-btn').classList.toggle('gold');
+    document.getElementById('nav1-btn').classList.remove('white');
+}
+function zlatacerna1(){
+    document.getElementById('nav3-1').classList.toggle('aSmaller');
+    document.getElementById('nav3-1').classList.remove('aBigger');
+
+    document.getElementById('nav1-btn').classList.toggle('white');
+    document.getElementById('nav1-btn').classList.remove('gold');
+}
+
+
+function cernazlata2(){
+    document.getElementById('nav3-2').classList.toggle('aBigger');
+    document.getElementById('nav3-2').classList.remove('aSmaller');
+
+    document.getElementById('nav2-btn').classList.toggle('gold');
+    document.getElementById('nav2-btn').classList.remove('white');
+}
+function zlatacerna2(){
+    document.getElementById('nav3-2').classList.toggle('aSmaller');
+    document.getElementById('nav3-2').classList.remove('aBigger');
+
+    document.getElementById('nav2-btn').classList.toggle('white');
+    document.getElementById('nav2-btn').classList.remove('gold');
+}
+
+
+function cernazlata3(){
+    document.getElementById('nav3-3').classList.toggle('aBigger');
+    document.getElementById('nav3-3').classList.remove('aSmaller');
+
+    document.getElementById('nav3-btn').classList.toggle('gold');
+    document.getElementById('nav3-btn').classList.remove('white');
+}
+function zlatacerna3(){
+    document.getElementById('nav3-3').classList.toggle('aSmaller');
+    document.getElementById('nav3-3').classList.remove('aBigger');
+
+    document.getElementById('nav3-btn').classList.toggle('white');
+    document.getElementById('nav3-btn').classList.remove('gold');
 }

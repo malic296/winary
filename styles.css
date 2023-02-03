@@ -1,5 +1,8 @@
 body{
     margin:0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .strip{
     height:10px;
@@ -141,40 +144,536 @@ a{
     display: flex;
     justify-content: center;
     width:100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url("vinarstvi/krajina.png"); 
-    background-color: black;
-    height:540px;
-    background-size: contain;
-    background-repeat: no-repeat;
 }
+.landscape-background-pic{
+    width:100%;
+    height:auto;
+    filter:brightness(75%);
+}
+
 .text-krajina{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding-top:50px;
     width:60%;
+    right:25%;
+    top:18%;
+    position:absolute;
     
 }
 .krajina1{
     font-family: 'Roboto', sans-serif;
     color: white;
     background-color: rgb(199,164,60,0.7);
-    padding:10px;
-    font-size:40px;  
-
-
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:20px;
+    padding-bottom:20px;
+    font-size:2em;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: fit-content;
+    
 }
 .krajina2{
     font-family: 'Roboto', sans-serif;
+    font-size:18px;
+    justify-content: flex-end;
     color: white;
     padding:10px;
     text-align: right;
+    width: 100%;
+
+}
+/*SKLEPY ZAPLETAL -------------------------------------------------------------------------------------------------------*/
+.zapletal-text{
+    width: 100%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+p{
+    margin:0px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+h2{
+    color: rgb(199,164,60);
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.zapletal-nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    height: auto;
+    margin-bottom:40px;
+}
+.zapletal-nav1{
+    margin:10px;
+    width:230px;
 
 }
 
+.nav1-1{
+    height:200px; 
+    width:230px;
+    background-image: url("vinarstvi/dum.png"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+}
+.nav2-1{
+    height:200px; 
+    width:230px;
+    background-image: url("vinarstvi/vino.png"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+}
+.nav3-1{
+    height:200px; 
+    width:100%;
+    background-image: url("vinarstvi/flasky.png"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+}
+
+.nav3{
+    display: flex;
+    background-color: rgb(0,0,0,0.5);
+    padding-left: 10px;
+    width:100%;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    height:20%;
+    font-size:18px;
+}
+
+.nav1-2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 130px;
+    flex-direction: column;
+    margin-top:20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size:14px;
+}
+.nav2-2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 130px;
+    flex-direction: column;
+    margin-top:20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size:14px;
+}
+.nav3-2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 130px;
+    flex-direction: column;
+    margin-top:20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size:14px;
+   
+}
+.nocontent{
+    height:30px;
+}
+
+.nav1-btn{
+    display: flex;
+    width:60px;
+    padding:5px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(199,164,60);
+    border: 2px solid rgb(199,164,60);
+    border-radius: 20%;
+    bottom: 0px;
+}
+
+.nav2-btn{
+    display: flex;
+    bottom: 0px;
+    width:60px;
+    padding:5px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(199,164,60);
+    border: 2px solid rgb(199,164,60);
+    border-radius: 20%;
+}
+
+.nav3-btn{
+    display: flex;
+    width:60px;
+    padding:5px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(199,164,60);
+    border: 2px solid rgb(199,164,60);
+    border-radius: 20%;
+}
+
+@keyframes bigger {
+    0%{height:40px;background-color:rgb(0,0,0,0.5)}
+    100%{height:200px;background-color: rgb(199,164,60,0.5);}
+}
+@keyframes smaller {
+    0%{height:200px;background-color: rgb(199,164,60,0.5);}
+    100%{height:40px;background-color:rgb(0,0,0,0.5);}
+}
+@keyframes cabada {
+    0%{background-color: rgb(199,164,60); color:white;}
+    100%{background-color: white;color:rgb(199,164,60);}
+}
+@keyframes gold {
+    0%{background-color: white;color: rgb(199,164,60);}
+    100%{background-color: rgb(199,164,60);color: white;}
+}
+
+.aBigger{
+    animation: bigger 0.3s forwards ease-in-out;
+    color: white;
+}
+
+.aSmaller{
+    animation: smaller 0.3s forwards ease-in-out;
+    
+}
+.nav-zapletal{
+    color: white;
+    overflow: hidden;
+    width:100%;
+}
+
+.white{
+    animation: white 0.3s forwards ease-in-out;
+}
+
+.gold{
+    animation: gold 0.3s forwards ease-in-out;
+}
+
+/*MENU BLUR -------------------------------------------------------------------------------------------------------*/
+
+.blur-all{
+    display: flex;
+    flex-direction: row;
+    background-image: url("vinarstvi/flasky_pozadi.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: flex-end;
+    align-items: center;
+    width:100%;
+    height:600px;
+    
+}
+
+.blur1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:40%;
+}
+.blur2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:40%;
+}
+.blur-pic{
+    height:400px;
+}
+.blur-text{
+    font-size: 45px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.blur-btn{
+    margin-top:30px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    background-color: rgb(199,164,60);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 20%;
+    text-align: center;
+}
+.blur-btn:hover{
+    scale:1.1;
+    transition: .4s;
+    color: black;
+}
+
+/*3 BOTTLES -------------------------------------------------------------------------------------------------------*/
+
+.bottle-btn{
+    border:2px solid rgb(199,164,60);
+    border-radius: 20%;
+    color:rgb(199,164,60);
+    width:60px;
+    padding:5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+.bottle-btn:hover{
+    background-color: rgb(199,164,60);
+    color:white;
+    transition: .4s;
+}
+.bottles{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top:50px;
+    width:60%;
+    margin-bottom:100px;
+}
+
+.bottle_header{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bot1{color: silver;}
+.bot2{color:rgb(199,164,60);}
+
+.laid_bottle{
+    width:220px;
+    margin-bottom:50px;
+    margin-top:30px;
+}
+
+.bottle-silver{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left:30px;
+}
+
+.bottle-gold{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right:30px;
+    margin-left:30px;
+}
+
+.bottle-mystery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right:30px;
+}
+
+.bottle-content{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*DEGUSTACE ----------------------------------------------------------------------------*/
+
+.degustace-container{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.degustace{
+    width:60%;
+    display: flex;
+    flex-direction: row;
+}
+
+.degustace-pic{
+    height: 450px;
+    width: auto;
+}
+
+.degustace1{
+    margin-right:20px;
+}
+.degustace2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:20px;
+    width:200px;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.degustace-btn{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 20%;
+    background-color: white;
+    color:rgb(199,164,60);
+    border: 2px solid rgb(199,164,60);
+}
+.degustace-btn:hover{
+    background-color: rgb(199,164,60);
+    color:white;
+    transition: .4s;
+}
+
+
+/*DODĚLAT RESPONZIVITU U DEGUSTACE !!!!*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*MEDIA QUERIES-------------------------------------------------------------------------------------------------------------------------------------------------*/
-@media screen and (max-width:1000px){
+@media screen and (max-width:750px){
+    .bottles{
+        flex-direction: column;
+    }
+    .bottle-gold{
+        margin:0px
+    }
+    .bottle-mystery{
+        margin:0px
+    }
+    .bottle-silver{
+        margin:0px
+    }
+    .zapletal-nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width:450px){
+    .blur-all{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .blur-pic{
+        height:300px;
+        margin-bottom:20px;
+    }
+    .blur-text{
+        font-size:20px;
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+
+    .blur-btn{
+        font-size:15px;
+        margin-bottom:20px;
+    }
     ul{      
         flex-direction: column;        
     }
@@ -222,6 +721,137 @@ a{
         align-items: center;
     }
     /*MENU OVER-------------------------------------------------------------------------------------------------------------------------------------------------*/
+ 
+    .text-krajina{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top:7%;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+        width: fit-content; 
+        transition: .4s;
+        
+    }
+    .krajinaPosun{
+        top: 458px;
+        transition: .4s;
+    }
+    .krajina1{
+        display: flex;
+        font-size:1.2em;
+        align-items: center;
+        justify-content: center;
+        padding-left:3px;
+        padding-right:3px;
+        padding-top:5px;
+        padding-bottom:5px;
+        
+        
+    }
+    .krajina2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size:10px;
+        width:100%;
+        text-align: center;          
+    }
+    .zapletal-nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width:1000px) and (min-width:451px){
+    ul{      
+        flex-direction: column;        
+    }
+ 
+    #header.dolu{
+        flex-direction: row;
+        align-items: flex-end;
+        max-height: 20px;
+        height:100%;
+        overflow: visible;
+        margin-bottom: 450px;
+    }
+    #sidebar.active{
+        flex-direction: column;
+        top:220px;
+        height: 50px;
+    }
+    
+    #toggle-btn.posun{
+        position: absolute;
+        top: 420px;
+    }
+
+    .logo-menu{
+        width:100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding-bottom:0px;
+    }
+    #sidebar{
+        height:70px;
+        flex-direction: column;
+    }
+    .kontakt-menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left:0px;
+        width: 100%;
+    }
+    #header{
+        flex-direction: row;
+        align-items: center;
+    }
+    /*MENU OVER-------------------------------------------------------------------------------------------------------------------------------------------------*/
+    .text-krajina{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top:8%;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+        width: fit-content; 
+        transition: .4s;
+        
+    }
+    .krajinaPosun{
+        top: 470px;
+        transition: .4s;
+    }
+    .krajina1{
+        display: flex;
+        font-size:1.5em;
+        align-items: center;
+        justify-content: center;
+        
+        
+    }
+    .krajina2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size:13px;
+        width:100%;
+        text-align: center;
+           
+    }
+
+
 }
 @media screen and (min-width:1001px) and (max-width:1300px){
     ul{      
@@ -273,6 +903,30 @@ a{
     }
     /*MENU OVER-------------------------------------------------------------------------------------------------------------------------------------------------*/
 
+    .text-krajina{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width:60%;
+        right:25%;
+        top:12%;
+        transition: .4s;
+        
+    }
+
+    .krajinaPosun{
+        top: 280px;
+        transition: .4s;
+    }
+
+    .krajina1{
+        font-size:1.5em;
+        
+    }
+    .krajina2{
+        font-size:13px;
+           
+    }
     
 
 }
@@ -320,7 +974,16 @@ a{
         transform: translateX(50px);
     }
     /*MENU OVER-------------------------------------------------------------------------------------------------------------------------------------------------*/
-
+    .text-krajina{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width:60%;
+        right:25%;
+        top:25%;
+        position:absolute;
+        
+    }
 
 
 
