@@ -154,8 +154,67 @@
         </div>
 
     </div>
+    <div class="zakaznici-header"><h2>Spokojení Zákazníci</h2></div>
+    <div class="zakaznici">
+        <div class="zakaznik">
+            <i class="fa-regular fa-user zakaznik-user-icon"></i><br>
+            <div class="recenze">
+                Výborná poloha, krásné prostředí, zejména víno z řady Mystery skvělé,
+                originální sýry a sympatický personál.
+            </div>
+            <div class="autor"><b>David Schuch</b></div>
+            <div class="platforma"><b>Facebook</b></div>
+        </div>
+        <div class="zakaznik zakaznik-border">
+            <i class="fa-regular fa-user zakaznik-user-icon"></i><br>
+            <div class="recenze">
+                Krásné prostředí, super lidi no a to vínečko, no co
+                vám budu povídat, raději si tam zajeďte!
+            </div>
+            <div class="autor"><b>Aleš Čermák</b></div>
+            <div class="platforma"><b>Facebook</b></div>
+        </div>
+        <div class="zakaznik">
+            <i class="fa-regular fa-user zakaznik-user-icon"></i></i><br>
+            <div class="recenze">
+                Jako vždy super přístup. Několikrát navštíveno i s noclehem.
+                Vynikající vína, vřele doporučuji.
+            </div>
+            <div class="autor"><b>Kamil Raszka</b></div>
+            <div class="platforma"><b>Facebook</b></div>
+        </div>
+    </div>
 
-    <footer>Čau</footer>
+    <div class="oceneni">
+        <img src = "vinarstvi/salon.png" class = "medaile">
+        <img src = "vinarstvi/deutchland_2014.png" class = "medaile">
+        <img src = "vinarstvi/wine_trophy.png" class = "medaile">
+    </div>
+
+    <div class="map-container">
+        <div class="help-map">
+            <div class="text-mapa">
+                <img src = "vinarstvi/logoTibor.png" class = "text-mapa-logo"><br>
+                <div class="mapa-adresa">
+                    Tibor Zapletal<br>
+                    Ke Kapličce<br>
+                    69102, Velké Bílovice<br>
+                    Česká Republika<br><br>
+                </div>
+                <div class="mapa-kontakt">
+                    tibor@vinarstvi.cz<br>
+                    +420 606 715 417
+                </div>
+            </div>
+            <img src = "vinarstvi/mapa.png" class = "mapa">
+        </div>
+    </div>
+
+    <footer>
+        © 2021 | www.vinozapletal.cz
+
+
+    </footer>
     
 </body>
 </html>

@@ -59,6 +59,7 @@ li{
     padding:10px;
     margin-left:10px;
     margin-right:10px;
+    font-size: 20px;
     display: flex;
     justify-content: center;
     font-family: 'Roboto', sans-serif;
@@ -218,13 +219,13 @@ h2{
 }
 .zapletal-nav1{
     margin:10px;
-    width:230px;
+    width:280px;
 
 }
 
 .nav1-1{
-    height:200px; 
-    width:230px;
+    height:250px; 
+    width:280px;
     background-image: url("vinarstvi/dum.png"); 
     background-size: cover;
     background-repeat: no-repeat;
@@ -232,8 +233,8 @@ h2{
     align-items: flex-end;
 }
 .nav2-1{
-    height:200px; 
-    width:230px;
+    height:250px; 
+    width:280px;
     background-image: url("vinarstvi/vino.png"); 
     background-size: cover;
     background-repeat: no-repeat;
@@ -241,8 +242,8 @@ h2{
     align-items: flex-end;
 }
 .nav3-1{
-    height:200px; 
-    width:100%;
+    height:250px; 
+    width:280px;
     background-image: url("vinarstvi/flasky.png"); 
     background-size: cover;
     background-repeat: no-repeat;
@@ -339,10 +340,10 @@ h2{
 
 @keyframes bigger {
     0%{height:40px;background-color:rgb(0,0,0,0.5)}
-    100%{height:200px;background-color: rgb(199,164,60,0.5);}
+    100%{height:250px;background-color: rgb(199,164,60,0.5);}
 }
 @keyframes smaller {
-    0%{height:200px;background-color: rgb(199,164,60,0.5);}
+    0%{height:250px;background-color: rgb(199,164,60,0.5);}
     100%{height:40px;background-color:rgb(0,0,0,0.5);}
 }
 @keyframes cabada {
@@ -524,15 +525,18 @@ h2{
     width:60%;
     display: flex;
     flex-direction: row;
+    margin-bottom:100px;
 }
 
 .degustace-pic{
-    height: 450px;
+    height: 400px;
     width: auto;
 }
 
 .degustace1{
     margin-right:20px;
+    display: flex;
+    align-items: center;
 }
 .degustace2{
     display: flex;
@@ -560,18 +564,149 @@ h2{
     transition: .4s;
 }
 
+/*Zakaznici ----------------------------------------------------------------------------*/
+.zakaznici-header{
+    font-size: 18px;
+    color: rgb(199,164,60);
+    text-align: center;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom:50px;
+}
 
-/*DODĚLAT RESPONZIVITU U DEGUSTACE !!!!*/
+.zakaznici{
+    width:80%;
+    height:fit-content;
+    display: flex;
+    justify-content: center;
+    margin-bottom:100px;
+
+}
+
+.zakaznik{
+    height:300px;
+    font-family: 'Roboto', sans-serif;
+    width:33.3%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding:30px;
+}
+
+.zakaznik-border{
+    border-left: 1px solid rgb(199,164,60);
+    border-right: 1px solid rgb(199,164,60);
+}
+
+.recenze{
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 10px;
+    padding-right:10px;
+    margin-bottom:20px;
+    font-size:20px;
+    width:100%;
+}
+
+.autor{
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 10px;
+    padding-right:10px;
+    margin-bottom:5px;
+    width:100%;
+}
+
+.platforma{
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 10px;
+    padding-right:10px;
+    width:100%;
+    color:rgb(199,164,60);
+}
+
+.zakaznik-user-icon{
+    font-size: 60px;
+    padding-bottom:30px;
+    
+}
+
+/*MEDAILE ----------------------------------------------------------------------------*/
+
+.oceneni{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom:100px;
+}
+
+.medaile{
+    margin:20px;
+}
+
+
+/*MAPA ----------------------------------------------------------------------------*/
+.map-container{
+    background-color: rgb(230, 230, 230);
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+.help-map{
+    position: relative;
+}
+.text-mapa{
+position: absolute;
+height: 100%;
+color:white;
+width:30%;
+background-color: rgb(0, 0, 0, 0.5);
+font-family: 'Roboto', sans-serif;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.text-mapa-logo{
+    height: 150px;
+    width: 150px;
+    color: white;
+}
+
+.mapa-adresa{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.mapa-kontakt{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
 
 
 
 
+/*FOOTER ----------------------------------------------------------------------------*/
 
-
-
-
-
-
+footer{
+    height:50px;
+    background-color: rgb(52,52,52);
+    color:rgb(136,136,136);
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+    width:100%;
+}
 
 
 
@@ -633,7 +768,34 @@ h2{
 
 
 /*MEDIA QUERIES-------------------------------------------------------------------------------------------------------------------------------------------------*/
-@media screen and (max-width:750px){
+@media screen and (max-width:900px){
+    .recenze{text-align: center;}
+    .autor{text-align: center;}
+    .platforma{text-align: center;}
+    .zakaznici{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .zakaznik{
+        width:100%;
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .zakaznik-border{
+        border-left: 0px;
+        border-right: 0px;
+        border-top: 1px solid rgb(199,164,60);
+        border-bottom: 1px solid rgb(199,164,60);
+    }
+    .oceneni{
+        flex-direction: column;
+    }
+    .medaile{
+        height:200px;
+        width:200px;
+    }
+
     .bottles{
         flex-direction: column;
     }
@@ -651,6 +813,25 @@ h2{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .degustace-pic{
+        height: 300px;
+        width: auto;
+    }
+
+    .degustace{
+        width:80%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .degustace1{
+        justify-content: center;
+        margin:0px;
+    }
+    .degustace2{
+        width:100%;
+        margin:0px;
     }
 }
 @media screen and (max-width:450px){
@@ -766,6 +947,25 @@ h2{
         align-items: center;
     }
 
+    .degustace-pic{
+        height: 300px;
+        width: auto;
+    }
+
+    .degustace{
+        width:80%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .mapa{
+        width:100%;
+        height:auto;
+    }
+    .text-mapa-logo{width:50px; height:50px;}
+    .mapa-adresa{font-size:7px;}
+    .mapa-kontakt{font-size:7px;}
+
 }
 
 @media screen and (max-width:1000px) and (min-width:451px){
@@ -850,10 +1050,37 @@ h2{
         text-align: center;
            
     }
+    .degustace-pic{
+        height: 300px;
+        width: auto;
+    }
+
+    .degustace{
+        width:80%;
+        display: flex;
+        justify-content: center;
+    }
+    .mapa{
+        width:100%;
+        height:auto;
+    }
+
+    .text-mapa-logo{width:100px; height:100px;}
+    .mapa-adresa{font-size:15px;}
+    .mapa-kontakt{font-size:15px;}
 
 
 }
 @media screen and (min-width:1001px) and (max-width:1300px){
+    .mapa{
+        width:900px;
+        height:auto;
+    }
+
+    .recenze{
+        font-size:16px;
+    }
+
     ul{      
         flex-direction: row;        
     }
@@ -927,6 +1154,17 @@ h2{
         font-size:13px;
            
     }
+
+    .degustace-pic{
+        height: 300px;
+        width: auto;
+    }
+
+    .degustace{
+        width:80%;
+        display: flex;
+        justify-content: center;
+    }
     
 
 }
@@ -983,6 +1221,10 @@ h2{
         top:25%;
         position:absolute;
         
+    }
+    .mapa{
+        width:900px;
+        height:auto;
     }
 
 
