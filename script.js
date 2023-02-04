@@ -76,15 +76,23 @@ function cernazlata1(){
     document.getElementById('nav3-1').classList.toggle('aBigger');
     document.getElementById('nav3-1').classList.remove('aSmaller');
 
-    document.getElementById('nav1-btn').classList.toggle('gold');
-    document.getElementById('nav1-btn').classList.remove('white');
+    document.getElementById('nav1-btn1').classList.toggle('gold');
+    document.getElementById('nav1-btn1').classList.remove('white');
+    document.getElementById('nav1-btn2').classList.toggle('gold');
+    document.getElementById('nav1-btn2').classList.remove('white');
+    document.getElementById('nav1-btn3').classList.toggle('gold');
+    document.getElementById('nav1-btn3').classList.remove('white');
 }
 function zlatacerna1(){
     document.getElementById('nav3-1').classList.toggle('aSmaller');
     document.getElementById('nav3-1').classList.remove('aBigger');
 
-    document.getElementById('nav1-btn').classList.toggle('white');
-    document.getElementById('nav1-btn').classList.remove('gold');
+    document.getElementById('nav1-btn1').classList.toggle('white');
+    document.getElementById('nav1-btn1').classList.remove('gold');
+    document.getElementById('nav1-btn2').classList.toggle('white');
+    document.getElementById('nav1-btn2').classList.remove('gold');
+    document.getElementById('nav1-btn3').classList.toggle('white');
+    document.getElementById('nav1-btn3').classList.remove('gold');
 }
 
 
@@ -92,15 +100,23 @@ function cernazlata2(){
     document.getElementById('nav3-2').classList.toggle('aBigger');
     document.getElementById('nav3-2').classList.remove('aSmaller');
 
-    document.getElementById('nav2-btn').classList.toggle('gold');
-    document.getElementById('nav2-btn').classList.remove('white');
+    document.getElementById('nav2-btn1').classList.toggle('gold');
+    document.getElementById('nav2-btn1').classList.remove('white');
+    document.getElementById('nav2-btn2').classList.toggle('gold');
+    document.getElementById('nav2-btn2').classList.remove('white');
+    document.getElementById('nav2-btn3').classList.toggle('gold');
+    document.getElementById('nav2-btn3').classList.remove('white');
 }
 function zlatacerna2(){
     document.getElementById('nav3-2').classList.toggle('aSmaller');
     document.getElementById('nav3-2').classList.remove('aBigger');
 
-    document.getElementById('nav2-btn').classList.toggle('white');
-    document.getElementById('nav2-btn').classList.remove('gold');
+    document.getElementById('nav2-btn1').classList.toggle('white');
+    document.getElementById('nav2-btn1').classList.remove('gold');
+    document.getElementById('nav2-btn2').classList.toggle('white');
+    document.getElementById('nav2-btn2').classList.remove('gold');
+    document.getElementById('nav2-btn3').classList.toggle('white');
+    document.getElementById('nav2-btn3').classList.remove('gold');
 }
 
 
@@ -108,13 +124,82 @@ function cernazlata3(){
     document.getElementById('nav3-3').classList.toggle('aBigger');
     document.getElementById('nav3-3').classList.remove('aSmaller');
 
-    document.getElementById('nav3-btn').classList.toggle('gold');
-    document.getElementById('nav3-btn').classList.remove('white');
+    document.getElementById('nav3-btn1').classList.toggle('gold');
+    document.getElementById('nav3-btn1').classList.remove('white');
+    document.getElementById('nav3-btn2').classList.toggle('gold');
+    document.getElementById('nav3-btn2').classList.remove('white');
+    document.getElementById('nav3-btn3').classList.toggle('gold');
+    document.getElementById('nav3-btn3').classList.remove('white');
 }
 function zlatacerna3(){
     document.getElementById('nav3-3').classList.toggle('aSmaller');
     document.getElementById('nav3-3').classList.remove('aBigger');
 
-    document.getElementById('nav3-btn').classList.toggle('white');
-    document.getElementById('nav3-btn').classList.remove('gold');
+    document.getElementById('nav3-btn1').classList.toggle('white');
+    document.getElementById('nav3-btn1').classList.remove('gold');
+    document.getElementById('nav3-btn2').classList.toggle('white');
+    document.getElementById('nav3-btn2').classList.remove('gold');
+    document.getElementById('nav3-btn3').classList.toggle('white');
+    document.getElementById('nav3-btn3').classList.remove('gold');
+}
+
+
+
+
+function bilazlata1(){
+    document.getElementById('vice-left1').classList.toggle('vice-zlata');
+    document.getElementById('vice-left1').classList.remove('vice-bila');
+    document.getElementById('vice-stred1').classList.toggle('vice-text-zlata');
+    document.getElementById('vice-stred1').classList.remove('vice-text-bila');
+    document.getElementById('vice-right1').classList.toggle('vice-zlata');
+    document.getElementById('vice-right1').classList.remove('vice-bila');
+}
+
+function zlatabila1(){
+    document.getElementById('vice-left1').classList.toggle('vice-bila');
+    document.getElementById('vice-left1').classList.remove('vice-zlata');
+    document.getElementById('vice-stred1').classList.toggle('vice-text-bila');
+    document.getElementById('vice-stred1').classList.remove('vice-text-zlata');
+    document.getElementById('vice-right1').classList.toggle('vice-bila');
+    document.getElementById('vice-right1').classList.remove('vice-zlata');
+
+}
+function bilazlata2(){
+    document.getElementById('vice-left2').classList.toggle('vice-zlata');
+    document.getElementById('vice-left2').classList.remove('vice-bila');
+    document.getElementById('vice-stred2').classList.toggle('vice-text-zlata');
+    document.getElementById('vice-stred2').classList.remove('vice-text-bila');
+    document.getElementById('vice-right2').classList.toggle('vice-zlata');
+    document.getElementById('vice-right2').classList.remove('vice-bila');
+}
+
+function zlatabila2(){
+    document.getElementById('vice-left2').classList.toggle('vice-bila');
+    document.getElementById('vice-left2').classList.remove('vice-zlata');
+    document.getElementById('vice-stred2').classList.toggle('vice-text-bila');
+    document.getElementById('vice-stred2').classList.remove('vice-text-zlata');
+    document.getElementById('vice-right2').classList.toggle('vice-bila');
+    document.getElementById('vice-right2').classList.remove('vice-zlata');
+
+}
+
+
+
+function bilazlata3(){
+    document.getElementById('vice-left3').classList.toggle('vice-zlata');
+    document.getElementById('vice-left3').classList.remove('vice-bila');
+    document.getElementById('vice-stred3').classList.toggle('vice-text-zlata');
+    document.getElementById('vice-stred3').classList.remove('vice-text-bila');
+    document.getElementById('vice-right3').classList.toggle('vice-zlata');
+    document.getElementById('vice-right3').classList.remove('vice-bila');
+}
+
+function zlatabila3(){
+    document.getElementById('vice-left3').classList.toggle('vice-bila');
+    document.getElementById('vice-left3').classList.remove('vice-zlata');
+    document.getElementById('vice-stred3').classList.toggle('vice-text-bila');
+    document.getElementById('vice-stred3').classList.remove('vice-text-zlata');
+    document.getElementById('vice-right3').classList.toggle('vice-bila');
+    document.getElementById('vice-right3').classList.remove('vice-zlata');
+
 }

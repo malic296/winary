@@ -66,7 +66,13 @@
             <div class="nav1-2">
                 Ochutnejte kouzlo našeho vinařství poblíž vinohradu a frekventované cyklostezky...<br><br>
                 <div class="nocontent"></div>
-                <a href = "vinarstvi.php" onmouseenter = "cernazlata1()" onmouseleave="zlatacerna1()"><div class="nav1-btn" id = "nav1-btn">Více</div></a>
+                <a href = "vinarstvi.php" onmouseenter = "cernazlata1()" onmouseleave="zlatacerna1()">
+                <div class="vice">
+                    <div class="vice-left" id = "nav1-btn1"></div>
+                    <div class="vice-stred" id = "nav1-btn2">Více</div>
+                    <div class="vice-right" id = "nav1-btn3"></div>
+                </div>
+                </a>
             </div>
 
         </div>
@@ -76,7 +82,13 @@
             <div class="nav2-2">
                 Snažíme se vytvářet především suchá a polosuchá vína s osobitým charakterem...<br><br>
                 <div class="nocontent"></div>
-                <a href = "story.php" onmouseenter = "cernazlata2()" onmouseleave="zlatacerna2()"><div class="nav2-btn" id = "nav2-btn">Více</div></a>
+                <a href = "story.php" onmouseenter = "cernazlata2()" onmouseleave="zlatacerna2()">
+                <div class="vice">
+                    <div class="vice-left" id = "nav2-btn1"></div>
+                    <div class="vice-stred" id = "nav2-btn2">Více</div>
+                    <div class="vice-right" id = "nav2-btn3"></div>
+                </div>
+                </a>
             </div>
 
         </div>
@@ -86,7 +98,13 @@
             <div class="nav3-2">
                 Příběh našeho vína se začal psát na nejlépe položených velkobílovických vinicích...<br><br>
                 <div class="nocontent"></div>
-                <a href = "degustace.php" onmouseenter = "cernazlata3()" onmouseleave="zlatacerna3()"><div class="nav3-btn" id = "nav3-btn">Více</div></a>
+                <a href = "degustace.php" onmouseenter = "cernazlata3()" onmouseleave="zlatacerna3()">
+                <div class="vice">
+                    <div class="vice-left" id = "nav3-btn1"></div>
+                    <div class="vice-stred" id = "nav3-btn2">Více</div>
+                    <div class="vice-right" id = "nav3-btn3"></div>
+                </div>
+                </a>
             </div>
 
         </div>
@@ -95,7 +113,13 @@
     <div class="blur-all">
         <div class="blur1">
             <div class="blur-text">Nakupujte u nás v e-shopu</div>
-            <a href = "Eshop.php"><div class="blur-btn">Do E-shopu</div></a>
+            <a href = "Eshop.php">
+                <div class="vice eshop-vice">
+                    <div class="vice-left shopleft"></div>
+                    <div class="shopstred">E-Shop</div>
+                    <div class="vice-right shopright"></div>
+                </div>
+            </a>
         </div>
         <div class="blur2">
             <img src = "vinarstvi/cervena_flaska.png" class = "blur-pic">
@@ -111,7 +135,13 @@
             <div class="nocontent">
                 
             </div>
-            <a href = "degustace.php"><div class="bottle-btn">Více</div></a>
+            <a href = "degustace.php" onmouseenter = "bilazlata1()" onmouseleave="zlatabila1()">
+                <div class="bottle-btn">
+                    <div class="vice-left" id = "vice-left1"></div>
+                    <div class="vice-stred" id = "vice-stred1">Více</div>
+                    <div class="vice-right" id = "vice-right1"></div>
+                </div>
+            </a>
         </div>
 
         <div class="bottle-gold">
@@ -122,7 +152,13 @@
             <div class="nocontent">
                 
             </div>
-            <a href = "degustace.php"><div class="bottle-btn">Více</div></a>
+            <a href = "degustace.php" onmouseenter = "bilazlata2()" onmouseleave="zlatabila2()">
+                <div class="bottle-btn">
+                    <div class="vice-left" id = "vice-left2"></div>
+                    <div class="vice-stred" id = "vice-stred2">Více</div>
+                    <div class="vice-right" id = "vice-right2"></div>
+                </div>
+            </a>
         </div>
 
         <div class="bottle-mystery">
@@ -133,7 +169,13 @@
             <div class="nocontent">
                 
             </div>
-            <a href = "degustace.php"><div class="bottle-btn">Více</div></a>
+            <a href = "degustace.php" onmouseenter = "bilazlata3()" onmouseleave="zlatabila3()">
+                <div class="bottle-btn">
+                    <div class="vice-left" id = "vice-left3"></div>
+                    <div class="vice-stred" id = "vice-stred3">Více</div>
+                    <div class="vice-right" id = "vice-right3"></div>
+                </div>
+            </a>
         </div>
     </div>
 
@@ -149,7 +191,13 @@
                     co nejkvalitnější hrozen při co nejmenším zatížení přírody. Proto ve vinici nepoužíváme
                     žádné pesticidy ani herbicidy a všechny vinice jsou kompletně zatravněny.<br><br><br>
                 </div>
-                <div class="degustace-btn">Mám Zájem</div>
+                <a href = "vinarstvi.php">
+                    <div class="vice eshop-vice">
+                        <div class="vice-left shopleft"></div>
+                        <div class="deguststred">Mám Zájem</div>
+                        <div class="vice-right shopright"></div>
+                    </div>
+                </a>
             </div>
         </div>
 
