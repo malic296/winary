@@ -1,3 +1,5 @@
+<?php session_start();?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,8 +28,9 @@
                     <a href = "story.php"><li id = "menu-item-id2"  onmouseenter = "larger2()" onmouseleave="shrink2()">Náš Příběh</li></a>
                     <a href = "vinarstvi.php"><li id = "menu-item-id3"  onmouseenter = "larger3()" onmouseleave="shrink3()">Vinařství</li></a>
                     <a href = "degustace.php"><li id = "menu-item-id4"  onmouseenter = "larger4()" onmouseleave="shrink4()">Degustace</li></a>
-                    <a href = "Eshop.php"><li id = "menu-item-id5"  onmouseenter = "larger5()" onmouseleave="shrink5()">E-shop</li></a>
-                    <a href = "Kontakt.php"><li id = "menu-item-id6"  onmouseenter = "larger6()" onmouseleave="shrink6()">Kontakt</li></a>
+                    <a href = "eshop.php"><li id = "menu-item-id5"  onmouseenter = "larger5()" onmouseleave="shrink5()">E-shop</li></a>
+                    <a href = "kontakt.php"><li id = "menu-item-id6"  onmouseenter = "larger6()" onmouseleave="shrink6()">Kontakt</li></a>
+                    <a href = "ubytovani.php"><li id = "menu-item-id8"  onmouseenter = "larger8()" onmouseleave="shrink8()">Ubytování</li></a>                   
                 </ul>
             </div> 
             <div class="kontakt-menu">
@@ -42,13 +45,14 @@
             <span></span>
         </div>
     </header>
+    
 
-    <div class = "landscape-background">
-        <img src="vinarstvi/krajina.png" class = "landscape-background-pic">
-    </div>
-    <div id = "text-krajina" class="text-krajina">
-        <div class="krajina1">Jsme rodinné vinařství</div>
-        <div class="krajina2">...z Velkých Bílovic<br>s dlouholetou rodinou tradicí<br>s kvalitním českým vínem</div>
+    <div class="header-kontakt">
+        <div class="header-text">
+            <div class="header-nadpis-index">Jsme rodinné vinařství</div>
+            <div class="header-podnadpis">...z Velkých Bílovic<br>s dlouholetou rodinou tradicí<br>s kvalitním českým vínem</div>
+        </div>
+        <img src = "vinarstvi/krajina.png" class = "kontakt-pic">        
     </div>
 
 
@@ -122,7 +126,7 @@
             </a>
         </div>
         <div class="blur2">
-            <img src = "vinarstvi/cervena_flaska.png" class = "blur-pic">
+            <img src = "vinarstvi/flaskyShop.png" class = "blur-pic">
         </div>
     </div>
 

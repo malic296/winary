@@ -1,3 +1,5 @@
+<?php session_start();?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,8 +28,9 @@
                     <a href = "story.php"><li class = "selected" id = "menu-item-id2"  onmouseenter = "larger2()" onmouseleave="shrink2()">Náš Příběh</li></a>
                     <a href = "vinarstvi.php"><li id = "menu-item-id3"  onmouseenter = "larger3()" onmouseleave="shrink3()">Vinařství</li></a>
                     <a href = "degustace.php"><li id = "menu-item-id4"  onmouseenter = "larger4()" onmouseleave="shrink4()">Degustace</li></a>
-                    <a href = "Eshop.php"><li id = "menu-item-id5"  onmouseenter = "larger5()" onmouseleave="shrink5()">E-shop</li></a>
-                    <a href = "Kontakt.php"><li id = "menu-item-id6"  onmouseenter = "larger6()" onmouseleave="shrink6()">Kontakt</li></a>
+                    <a href = "eshop.php"><li id = "menu-item-id5"  onmouseenter = "larger5()" onmouseleave="shrink5()">E-shop</li></a>
+                    <a href = "kontakt.php"><li id = "menu-item-id6"  onmouseenter = "larger6()" onmouseleave="shrink6()">Kontakt</li></a>
+                    <a href = "ubytovani.php"><li id = "menu-item-id8"  onmouseenter = "larger8()" onmouseleave="shrink8()">Ubytování</li></a>                   
                 </ul>
             </div> 
             <div class="kontakt-menu">
@@ -36,73 +39,19 @@
                 <a href = "Kontakt.php" target = "__blank"><i class="fa-brands fa-instagram menu-icon-right"></i></a>
             </div>
         </div>
-        <div id="toggle-btn" onclick="show(), move(), btn()" >
+        <div id="toggle-btn" onclick="show(), move(), btn(), krajina()">
             <span></span>
             <span></span>
             <span></span>
         </div>
     </header>
+   
 
-    <div class = "test">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet autem obcaecati 
-        nisi id quasi placeat recusandae nostrum, voluptatem, unde temporibus aperiam sint molestias sed illum quia? Nostrum molestiae unde numquam.<br>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet autem obcaecati 
-        nisi id quasi placeat recusandae nostrum, voluptatem, unde temporibus aperiam sint molestias sed illum quia? Nostrum molestiae unde numquam.<br>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet autem obcaecati 
-        nisi id quasi placeat recusandae nostrum, voluptatem, unde temporibus aperiam sint molestias sed illum quia? Nostrum molestiae unde numquam.<br>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet autem obcaecati 
-        nisi id quasi placeat recusandae nostrum, voluptatem, unde temporibus aperiam sint molestias sed illum quia? Nostrum molestiae unde numquam.<br>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet autem obcaecati 
-        nisi id quasi placeat recusandae nostrum, voluptatem, unde temporibus aperiam sint molestias sed illum quia? Nostrum molestiae unde numquam.<br>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet autem obcaecati 
-        nisi id quasi placeat recusandae nostrum, voluptatem, unde temporibus aperiam sint molestias sed illum quia? Nostrum molestiae unde numquam.<br>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet autem obcaecati 
-        nisi id quasi placeat recusandae nostrum, voluptatem, unde temporibus aperiam sint molestias sed illum quia? Nostrum molestiae unde numquam.<br>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet autem obcaecati 
-        nisi id quasi placeat recusandae nostrum, voluptatem, unde temporibus aperiam sint molestias sed illum quia? Nostrum molestiae unde numquam.<br>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet autem obcaecati 
-        nisi id quasi placeat recusandae nostrum, voluptatem, unde temporibus aperiam sint molestias sed illum quia? Nostrum molestiae unde numquam.<br>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet autem obcaecati 
-        nisi id quasi placeat recusandae nostrum, voluptatem, unde temporibus aperiam sint molestias sed illum quia? Nostrum molestiae unde numquam.<br>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet autem obcaecati 
-        nisi id quasi placeat recusandae nostrum, voluptatem, unde temporibus aperiam sint molestias sed illum quia? Nostrum molestiae unde numquam.<br>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet autem obcaecati 
-        nisi id quasi placeat recusandae nostrum, voluptatem, unde temporibus aperiam sint molestias sed illum quia? Nostrum molestiae unde numquam.<br>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet autem obcaecati 
-        nisi id quasi placeat recusandae nostrum, voluptatem, unde temporibus aperiam sint molestias sed illum quia? Nostrum molestiae unde numquam.<br>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet autem obcaecati 
-        nisi id quasi placeat recusandae nostrum, voluptatem, unde temporibus aperiam sint molestias sed illum quia? Nostrum molestiae unde numquam.<br>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet autem obcaecati 
-        nisi id quasi placeat recusandae nostrum, voluptatem, unde temporibus aperiam sint molestias sed illum quia? Nostrum molestiae unde numquam.<br>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet autem obcaecati 
-        nisi id quasi placeat recusandae nostrum, voluptatem, unde temporibus aperiam sint molestias sed illum quia? Nostrum molestiae unde numquam.<br>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet autem obcaecati 
-        nisi id quasi placeat recusandae nostrum, voluptatem, unde temporibus aperiam sint molestias sed illum quia? Nostrum molestiae unde numquam.<br>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet autem obcaecati 
-        nisi id quasi placeat recusandae nostrum, voluptatem, unde temporibus aperiam sint molestias sed illum quia? Nostrum molestiae unde numquam.<br>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet autem obcaecati 
-        nisi id quasi placeat recusandae nostrum, voluptatem, unde temporibus aperiam sint molestias sed illum quia? Nostrum molestiae unde numquam.<br>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet autem obcaecati 
-        nisi id quasi placeat recusandae nostrum, voluptatem, unde temporibus aperiam sint molestias sed illum quia? Nostrum molestiae unde numquam.<br>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet autem obcaecati 
-        nisi id quasi placeat recusandae nostrum, voluptatem, unde temporibus aperiam sint molestias sed illum quia? Nostrum molestiae unde numquam.<br>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet autem obcaecati 
-        nisi id quasi placeat recusandae nostrum, voluptatem, unde temporibus aperiam sint molestias sed illum quia? Nostrum molestiae unde numquam.<br>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet autem obcaecati 
-        nisi id quasi placeat recusandae nostrum, voluptatem, unde temporibus aperiam sint molestias sed illum quia? Nostrum molestiae unde numquam.<br>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet autem obcaecati 
-        nisi id quasi placeat recusandae nostrum, voluptatem, unde temporibus aperiam sint molestias sed illum quia? Nostrum molestiae unde numquam.<br>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet autem obcaecati 
-        nisi id quasi placeat recusandae nostrum, voluptatem, unde temporibus aperiam sint molestias sed illum quia? Nostrum molestiae unde numquam.<br>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet autem obcaecati 
-        nisi id quasi placeat recusandae nostrum, voluptatem, unde temporibus aperiam sint molestias sed illum quia? Nostrum molestiae unde numquam.<br>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet autem obcaecati 
-        nisi id quasi placeat recusandae nostrum, voluptatem, unde temporibus aperiam sint molestias sed illum quia? Nostrum molestiae unde numquam.<br>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet autem obcaecati 
+    <footer>
+        © 2021 | www.vinozapletal.cz
 
 
-    </div>
-    <footer>Čau</footer>
+    </footer>
     
 </body>
 </html>

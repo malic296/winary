@@ -71,6 +71,15 @@ function larger7(){
     document.getElementById('menu-item-id7').classList.remove('shrink');
 }
 
+function shrink8(){
+    document.getElementById('menu-item-id8').classList.toggle('shrink');
+    document.getElementById('menu-item-id8').classList.remove('larger');
+}
+function larger8(){
+    document.getElementById('menu-item-id8').classList.toggle('larger');
+    document.getElementById('menu-item-id8').classList.remove('shrink');
+}
+
 
 function cernazlata1(){
     document.getElementById('nav3-1').classList.toggle('aBigger');
@@ -203,3 +212,5 @@ function zlatabila3(){
     document.getElementById('vice-right3').classList.remove('vice-zlata');
 
 }
+
+
