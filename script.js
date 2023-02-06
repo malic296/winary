@@ -153,8 +153,6 @@ function zlatacerna3(){
 }
 
 
-
-
 function bilazlata1(){
     document.getElementById('vice-left1').classList.toggle('vice-zlata');
     document.getElementById('vice-left1').classList.remove('vice-bila');
@@ -211,6 +209,25 @@ function zlatabila3(){
     document.getElementById('vice-right3').classList.toggle('vice-bila');
     document.getElementById('vice-right3').classList.remove('vice-zlata');
 
+}
+
+function degOn1(){
+    document.getElementById('nav4-btn1').classList.toggle('deg-gold');
+    document.getElementById('nav4-btn1').classList.remove('deg-white');
+    document.getElementById('nav4-btn2').classList.toggle('deg-gold');
+    document.getElementById('nav4-btn2').classList.remove('deg-white');
+    document.getElementById('nav4-btn3').classList.toggle('deg-gold');
+    document.getElementById('nav4-btn3').classList.remove('deg-white');
+    
+}
+
+function degOff1(){
+    document.getElementById('nav4-btn1').classList.toggle('deg-white');
+    document.getElementById('nav4-btn1').classList.remove('deg-gold');
+    document.getElementById('nav4-btn2').classList.toggle('deg-white');
+    document.getElementById('nav4-btn2').classList.remove('deg-gold');
+    document.getElementById('nav4-btn3').classList.toggle('deg-white');
+    document.getElementById('nav4-btn3').classList.remove('deg-gold');
 }
 
 

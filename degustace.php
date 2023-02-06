@@ -45,8 +45,95 @@
             <span></span>
         </div>
     </header>
-       
+    <div class="header-kontakt">
+        <div class="header-text">
+            <div class="header-nadpis-degustace">Zážitek z degustace</div>
+            <div class="header-podnadpis">V sezóně máme otevřeno<br> každý čtvrtek až neděle.</div>
+        </div>
+        <img src = "fotky-degustace/degustace-header.png" class = "kontakt-pic">        
+    </div> 
     
+    
+    <div class="degustace-content1">
+        <div class="vinarstvi-nadpis">
+            <h2>Vinotéka</h2>
+            Velké Bílovice jsou plné tradic, folklóru a dobrého vína.<br>
+            Objevte i vy kouzlo našeho kraje.
+        </div>
+        
+        <div class="deg-cont1-pic">
+            <img src = "fotky-degustace/degustace-bar.png" class = "pic-deg-cont1">
+        </div>
+
+        <div class="deg-cont1-footer">
+            Vinotéka je součástí vinařství, kde se může každý stavit pro víno nejlépe po telefonické dohodě, celoročně od 8:00 do 16:00hod.<br> Objednávky příjímáme na telefonním čísle +420 606 715 417.<br><br>
+                <a href = "vinarstvi.php">
+                <div class="vice-degust" id = "degust-vice1"  onmouseenter = "degOn1()" onmouseleave = "degOff1()">
+                    <div class="vice-left-degust" id = "nav4-btn1"></div>
+                    <div class="vice-stred-degust" id = "nav4-btn2">Více</div>
+                    <div class="vice-right-degust" id = "nav4-btn3"></div>
+                </div>
+                </a>
+
+            
+        </div>
+    </div>
+
+    <div class="degustace-2fotky">
+        <div class="deg-fotka1">
+            <div class="absolute-texty pad-deg-right">
+                <div class="deg-text1"><b>Sezónní otevírací doba vinotéky</b></div>
+                <div class="deg-text2">
+                    <div class="deg-but-shape1"></div>
+                    <div class="deg-but-shape2">
+                        PÁ <b>15.00-20.00</b> hod<br>
+                        SO <b>15.00-21.00</b> hod<br>
+                        NE <b>9.30-11.30</b> hod<br>
+                    </div>
+                    <div class="deg-but-shape3"></div>
+                </div>
+            </div>
+            <img src = "fotky-degustace/deg-fotka-1.png" class = "deg-prvni-fotka degf1">
+        </div>
+        <div class="deg-fotka2">
+            <div class="absolute-texty pad-deg-left">
+                <div class="deg-text1"><b>Mimo sezónní otevírací doba vinotéky</b></div>
+                <div class="deg-text2">
+                    <div class="deg-but-shape1"></div>
+                    <div class="deg-but-shape2">
+                        PÁ <b>15.00-20.00</b> hod<br>
+                        SO <b>15.00-21.00</b> hod<br>
+                        NE <b>9.30-11.30</b> hod<br>
+                    </div>
+                    <div class="deg-but-shape3"></div>
+                </div>
+            </div>
+            <img src = "fotky-degustace/deg-fotka-2.png" class = "deg-prvni-fotka degf2">
+        </div>
+    </div>
+
+    
+
+
+
+    <div class="map-container">
+        <div class="help-map">
+            <div class="text-mapa">
+                <img src = "vinarstvi/logoTibor.png" class = "text-mapa-logo"><br>
+                <div class="mapa-adresa">
+                    Tibor Zapletal<br>
+                    Ke Kapličce<br>
+                    69102, Velké Bílovice<br>
+                    Česká Republika<br><br>
+                </div>
+                <div class="mapa-kontakt">
+                    tibor@vinarstvi.cz<br>
+                    +420 606 715 417
+                </div>
+            </div>
+            <img src = "vinarstvi/mapa.png" class = "mapa">
+        </div>
+    </div>
     <footer>
         © 2021 | www.vinozapletal.cz
     </footer>

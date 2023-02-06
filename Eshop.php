@@ -46,6 +46,7 @@
         </div>
     </header>
    
+    <h2>!!! WORK IN PROGRESS !!!</h2>
 
     <footer>
         © 2021 | www.vinozapletal.cz

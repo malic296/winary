@@ -842,21 +842,6 @@ footer{
     top: 20%;
 }
 
-.header-nadpis{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-    width:200px;
-    background-color: rgb(199,164,60,0.7);
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size:40px;
-    border-radius: 5%;
-
-}
-
 .header-nadpis-index{
     display: flex;
     text-align: center;
@@ -1078,21 +1063,6 @@ footer{
     top: 60%;
 }
 
-.header-nadpis-vin{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-    width:280px;
-    background-color: rgb(199,164,60,0.7);
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size:40px;
-    border-radius: 5%;
-
-}
-
 .header-podnadpis-vin{
     color: white;
     font-family: 'Roboto', sans-serif;
@@ -1188,12 +1158,184 @@ footer{
 }
 
 
+/*DEGUSTACE.PHP ---------------------------------------------------------------------------------------------------------------*/
+/*DEGUSTACE.PHP ---------------------------------------------------------------------------------------------------------------*/
+/*DEGUSTACE.PHP ---------------------------------------------------------------------------------------------------------------*/
+.header-nadpis,.header-nadpis-vin,.header-nadpis-degustace{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    padding-top:15px;
+    padding-bottom:15px;
+    height:max-content;
+    width:max-content;
+    background-color: rgb(199,164,60,0.7);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size:40px;
+    border-radius: 5px;
+}
+/*Degustace content*/
+
+.vice-degust{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+}
+
+.vice-left-degust{
+    width:25px;
+    height:30px;
+    border: 2px solid rgb(199,164,60);
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 100%;
+    border-right:0px;
+   
+}
+.vice-stred-degust{
+    height:30px;
+    border-top:2px solid rgb(199,164,60);
+    border-bottom: 2px solid rgb(199,164,60);
+    width:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(199,164,60);
+}
+.vice-right-degust{
+    width:25px;
+    border: 2px solid rgb(199,164,60);
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+    border-left:0px;
+    overflow:hidden;
+    
+}
+
+.degustace-content1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.deg-cont1-pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deg-cont1-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    width:60%;
+    margin-top:50px;
+    margin-bottom:50px;
+
+}
+
+.pic-deg-cont1{
+    width:80%;
+    height: auto;
+}
+
+@keyframes dGold {
+    0%{background-color: white; color: rgb(199,164,60);}
+    100%{background-color: rgb(199,164,60); color: white;}
+}
+@keyframes dWhite {
+    0%{background-color: rgb(199,164,60); color: white;}
+    100%{background-color: white; color: rgb(199,164,60);}
+}
+
+.deg-gold{
+    animation: dGold 0.3s forwards ease-in-out;
+}
+
+.deg-white{
+    animation: dWhite 0.3s forwards ease-in-out;
+}
 
 
 
 
+.degustace-2fotky{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    height:fit-content;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:100px;
+    background-color: rgb(192,192,192);
+}
 
+.deg-fotka1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+}
 
+.deg-fotka2{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+}
+
+.deg-text1{color:white; font-size:30px; height:20%; font-family: 'Roboto', sans-serif; display: flex; justify-content: center; align-items: flex-start;}
+.deg-text2{display: flex; flex-direction: row; height:70px; margin-top:30px;}
+
+.absolute-texty{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width:80%;
+    height:100%;
+    
+}
+
+.pad-deg-right{
+    padding-right:20px;
+}
+
+.pad-deg-left{
+    padding-left:20px;
+}
+
+.deg-prvni-fotka{
+    height: auto;
+    width:400px;
+}
+
+.degf1{margin-right:20px;}
+.degf2{margin-left:20px;}
+
+.deg-but-shape1{background-color: rgb(199,164,60, 0.7);width:40px; height:100%;border-bottom-left-radius: 100%; border-top-left-radius: 100%;}
+.deg-but-shape2{
+    background-color: rgb(199,164,60, 0.7);
+    font-family: 'Roboto', sans-serif;
+    font-size:15px;
+    color:white;
+    text-align: center;
+    padding:10px;
+
+}
+.deg-but-shape3{background-color: rgb(199,164,60, 0.7);width:40px;height:100%;border-bottom-right-radius: 100%; border-top-right-radius: 100%;}
 
 
 
@@ -1237,6 +1379,16 @@ footer{
 
 /*MEDIA QUERIES-------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width:700px){
+    .pad-deg-left,.pad-deg-right,.degf1,.degf2{
+        margin:0px;
+        padding: 0px;
+    }
+    .deg-fotka1{
+        margin-bottom:5px;
+    }
+    .degustace-2fotky{
+        flex-direction: column;
+    }
     .dotaz-container{
         flex-direction: column;
         width: 200px;
@@ -1410,7 +1562,7 @@ footer{
         padding-top:20px;
         border-top: 2px solid rgb(199,164,60);
     }
-    .header-nadpis{
+    .header-nadpis,.header-nadpis-vin,.header-nadpis-degustace{
         padding:0px;
         margin:0px;
     }
@@ -1464,17 +1616,17 @@ footer{
         max-height: 20px;
         height:100%;
         overflow: visible;
-        margin-bottom: 450px;
+        margin-bottom: 515px;
     }
     #sidebar.active{
         flex-direction: column;
-        top:220px;
+        top:250px;
         height: 50px;
     }
     
     #toggle-btn.posun{
         position: absolute;
-        top: 420px;
+        top: 480px;
     }
 
     .logo-menu{
