@@ -14,6 +14,7 @@ body{
     width:100px;
 }
 /*MENU SETTINGS-------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 .menu-icon-left{
     margin-right:20px;
 }
@@ -54,7 +55,7 @@ ul{
     padding:0px;
 }
 
-li{
+.li-menu{
     width:100px;
     padding:10px;
     margin-left:10px;
@@ -68,6 +69,10 @@ li{
 a{
     text-decoration: none;
     color: rgb(178,178,178);
+}
+.menu-button{
+    background-color: transparent;
+    border: none;
 }
 .larger{
     animation: larger 0.3s forwards ease-in-out;
@@ -210,6 +215,7 @@ p{
 h2{
     color: rgb(199,164,60);
     font-family: 'Roboto', sans-serif;
+    font-size:30px;
     
 }
 
@@ -773,7 +779,7 @@ footer{
 
 }
 .eshop-vice:hover{
-    scale:1.3;
+    scale:1.2;
     transition: .4s;
 }
 
@@ -1337,21 +1343,327 @@ footer{
 }
 .deg-but-shape3{background-color: rgb(199,164,60, 0.7);width:40px;height:100%;border-bottom-right-radius: 100%; border-top-right-radius: 100%;}
 
+.degustace-prohlidka{
+    background-image: url("fotky-degustace/svetly-sklep.png");
+    background-size: cover;
+    width:100%;
+    height:max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size:15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.prohlidka-nadpis{
+    text-align: center;
+    width:60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.prohlidka-footer{
+    text-align: center;
+    width:80%;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom:100px;
+}
+
+.prohlidka-content-container{
+    display: flex;
+    flex-direction: row;
+    margin-top:80px;
+    margin-bottom:80px;
+}
+.prohlidka-content{
+    min-height:400px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding:20px;
+    font-size:17px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-left: 20px;
+    margin-right:20px;
+    max-width: 200px;
+}
+
+.ul-degustace{
+    color: black;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    padding-top:50px;
+    justify-content: flex-start;
+}
+
+.li-degustace{
+    list-style: circle;
+    color: black;
+    font-size: 17px;
+    margin-bottom:10px;
+    width:80%;
+}
+
+.degustace-ubytovani-container{
+    width:100%;
+    height:auto;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-bottom:100px;
+}
+
+.degust-ubytovani1{
+    background-image: url("fotky-degustace/degust-ubyt1.png");
+    background-size: cover;
+    width:30%;
+    height:500px;
+}
+.degust-ubytovani2{
+    background-image: url("fotky-degustace/degust-ubyt2.png");
+    background-size: cover;
+    width:40%;
+    height:500px;
+}
+.degust-ubytovani3{
+    background-image: url("fotky-degustace/degust-ubyt3.png");
+    background-size: cover;
+    width:30%;
+    height:500px;
+}
+
+.degust-ubyt-pic{
+    width:100%;
+    height:100%;
+}
+
+.degust-ubytovani-redirect{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.degust-ubytovani-btn-nadpis{
+    font-size:55px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin-bottom:-20px;
+}
+.degust-stred{
+    max-width:110px;
+    height:40px;
+    font-size: 18px;
+    background-color: rgb(199,164,60, 0.7);
+    border: none;
+}
+
+.degust-left{
+    height:40px;
+    width:20px;
+    background-color: rgb(199,164,60, 0.7);
+    border: none;
+}
+
+.degust-right{
+    height:40px;
+    width:20px;
+    background-color: rgb(199,164,60, 0.7);
+    border: none;
+}
+
+.degustace-patky{
+    font-size:15px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: row;
+    width:80%;
+}
+
+.patek-pic{
+    width:80%;
+    height:auto;
+    max-height: 500px;
+}
+
+.patek-pic-container{
+    width:70%;
+    display: flex;
+    justify-content: center;
+    margin-bottom:100px;
+}
+
+.patek-text{
+    margin-left:20px;
+    font-size:20px;
+    width:30%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.patek-nadpis{
+    font-size: 40px;
+}
+.patek-stred{
+    font-size:20px;
+}
+
+/*DEGUSTACE SWIPER STYLY... TENTO SWIPER JE POUŽIT I V SOUBORU VINARSTVI.PHP*/
+.swiper-story{
+    margin-top:20px;
+}
+.swiper {
+    width: 100%;
+    height: fit-content;
+    margin-bottom:20px;
+    margin-top:100px;
+
+}
+.swiper-slide img{
+    height: auto;
+
+}
+
+.swiper-slide{
+    display: flex;
+    flex-direction: row;
+}
+
+.img1{width:30%;}
+.img2{width:40%;}
+.img3{width:30%;}
+
+.swiper-button-prev{
+    background-color: rgb(255,255,255,0.3);
+    padding:20px;
+    border-radius: 100%;
+    margin-left:30px;
+
+}
+.swiper-button-prev:hover{
+    background-color: rgb(255,255,255,0.7); 
+    transition: .4s;
+}
+.swiper-button-next{
+    background-color: rgb(255,255,255,0.3);
+    padding:20px;
+    border-radius: 100%;
+    margin-right:30px;
+
+}
+.swiper-button-next:hover{
+    background-color: rgb(255,255,255,0.7); 
+    transition: .4s;
+}
 
 
+/*STORY.PHP ---------------------------------------------------------------------------------------------------------------*/
+/*STORY.PHP ---------------------------------------------------------------------------------------------------------------*/
+/*STORY.PHP ---------------------------------------------------------------------------------------------------------------*/
 
+.story-header{
+    width:100%;
+    height:auto;
+    margin-bottom: 100px;
+}
 
+.story-header-pic{
+    width:100%;
+    height:auto;
+}
 
+.story-citat{
+    position: relative;
+    width:100%;
+    height: auto;
+    margin-bottom:-80px;
+}
 
+.citat-text{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+    height: 100%;
+}
 
+.citat-nadpis{
+    font-size:50px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
 
+.historie-text{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+}
 
+.historie-nadpis{
+    font-size: 40px;
+}
 
+.historie-text-tecky-center{
+    border-top:1px solid rgb(199,164,60);
+    border-bottom:1px solid rgb(199,164,60);
+    color: rgb(199,164,60);
+    text-align: center;
+    height:40px;
+    width: 40px;
+    margin-top:20px;
+}
+.historie-text-tecky-left{
+    border: 1px solid rgb(199,164,60);
+    border-right: none;
+    height:40px;
+    width:30px;
+    border-bottom-left-radius: 100%;
+    border-top-left-radius: 100%;
+    margin-top:20px;
+}
+.historie-text-tecky-right{
+    border: 1px solid rgb(199,164,60);
+    border-left: none;
+    height:40px;
+    width:30px;
+    border-bottom-right-radius: 100%;
+    border-top-right-radius: 100%;
+    margin-top:20px;
+}
 
+.btn-3dots{
+    display: flex;
+    flex-direction: row;
+}
 
-
-
-
+.historie-swipes{
+    margin-top: 100px;
+    margin-bottom:100px;
+    width:100%;
+}
 
 
 
@@ -1379,6 +1691,18 @@ footer{
 
 /*MEDIA QUERIES-------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width:700px){
+    .citat-nadpis{
+        font-size:20px;
+        margin-bottom:-20px;
+        
+    }
+    .prohlidka-content-container{
+        flex-direction: column;
+    }
+    .prohlidka-content{
+        margin: 0px;
+        margin-bottom:50px;
+    }
     .pad-deg-left,.pad-deg-right,.degf1,.degf2{
         margin:0px;
         padding: 0px;
@@ -1439,6 +1763,29 @@ footer{
     }
 }
 @media screen and (max-width:900px){
+    .citat-stred{
+        width:80px;
+    }
+    .patek-text{
+        font-size:17px;
+        margin:0px;
+        width:100%;
+    }
+    .patek-nadpis{
+        font-size:30px;
+    }
+    .degustace-patky{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .patek-pic-container{
+        margin:0px;
+    }
+    .patek-pic{
+        width:100%;
+    }
+
     .header-nadpis-index{
         justify-content: center;
         align-items: center;
@@ -1521,7 +1868,14 @@ footer{
 
     .shopstred{
         font-size:15px;
-        width:50px;
+        width:80px;
+        height: 15px;
+    }
+    .shopright{
+        height: 15px; width: 10px;
+    }
+    .shopleft{
+        height: 15px; width: 10px;
     }
 }
 @media screen and (max-width:450px){
@@ -1720,6 +2074,25 @@ footer{
 }
 
 @media screen and (max-width:1000px) and (min-width:451px){
+    .patek-text{
+        font-size:17px;
+        margin:0px;
+        width:100%;
+    }
+    .patek-nadpis{
+        font-size:30px;
+    }
+    .degustace-patky{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .patek-pic-container{
+        margin:0px;
+    }
+    .patek-pic{
+        width:100%;
+    }
     .ubyt-content{
         margin-bottom: 100px;
     }
@@ -1887,6 +2260,25 @@ footer{
 
 }
 @media screen and (min-width:1001px) and (max-width:1300px){
+    .patek-text{
+        font-size:17px;
+        margin:0px;
+        width:100%;
+    }
+    .patek-nadpis{
+        font-size:30px;
+    }
+    .degustace-patky{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .patek-pic-container{
+        margin:0px;
+    }
+    .patek-pic{
+        width:100%;
+    }
     .mapa{
         width:900px;
         height:auto;

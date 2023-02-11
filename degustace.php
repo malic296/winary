@@ -1,51 +1,4 @@
-<?php session_start();?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/9d291e9016.js" crossorigin="anonymous"></script>
-    <script src = "script.js"></script>
-</head>
-<body>
-    <div class="strip"></div>
-    <header id = "header">
-        <div id="sidebar">  
-            <div class="logo-menu">
-            <a href = "index.php"><img src = "vinarstvi/logoTibor.png" id = "menu-item-id7" class = "logo_menu_pic" onmouseenter = "larger7()" onmouseleave="shrink7()"></a>
-
-            </div>  
-            <div class="logo-nav">
-                <ul>
-                    <a href = "index.php"><li id = "menu-item-id1" onmouseenter = "larger1()" onmouseleave="shrink1()">Domů</li></a>
-                    <a href = "story.php"><li id = "menu-item-id2"  onmouseenter = "larger2()" onmouseleave="shrink2()">Náš Příběh</li></a>
-                    <a href = "vinarstvi.php"><li id = "menu-item-id3"  onmouseenter = "larger3()" onmouseleave="shrink3()">Vinařství</li></a>
-                    <a href = "degustace.php"><li class = "selected" id = "menu-item-id4"  onmouseenter = "larger4()" onmouseleave="shrink4()">Degustace</li></a>
-                    <a href = "eshop.php"><li id = "menu-item-id5"  onmouseenter = "larger5()" onmouseleave="shrink5()">E-shop</li></a>
-                    <a href = "kontakt.php"><li id = "menu-item-id6"  onmouseenter = "larger6()" onmouseleave="shrink6()">Kontakt</li></a>
-                    <a href = "ubytovani.php"><li id = "menu-item-id8"  onmouseenter = "larger8()" onmouseleave="shrink8()">Ubytování</li></a>                   
-                </ul>
-            </div> 
-            <div class="kontakt-menu">
-                <i class="fa-solid fa-phone menu-icon-left"></i>
-                +420 606 715 417 <a href = "Kontakt.php" target = "__blank"><i class="fa-brands fa-facebook menu-icon-right"></i></a>
-                <a href = "Kontakt.php" target = "__blank"><i class="fa-brands fa-instagram menu-icon-right"></i></a>
-            </div>
-        </div>
-        <div id="toggle-btn" onclick="show(), move(), btn(), krajina()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </header>
-    <div class="header-kontakt">
+   <div class="header-kontakt">
         <div class="header-text">
             <div class="header-nadpis-degustace">Zážitek z degustace</div>
             <div class="header-podnadpis">V sezóně máme otevřeno<br> každý čtvrtek až neděle.</div>
@@ -67,13 +20,18 @@
 
         <div class="deg-cont1-footer">
             Vinotéka je součástí vinařství, kde se může každý stavit pro víno nejlépe po telefonické dohodě, celoročně od 8:00 do 16:00hod.<br> Objednávky příjímáme na telefonním čísle +420 606 715 417.<br><br>
-                <a href = "vinarstvi.php">
-                <div class="vice-degust" id = "degust-vice1"  onmouseenter = "degOn1()" onmouseleave = "degOff1()">
-                    <div class="vice-left-degust" id = "nav4-btn1"></div>
-                    <div class="vice-stred-degust" id = "nav4-btn2">Více</div>
-                    <div class="vice-right-degust" id = "nav4-btn3"></div>
-                </div>
-                </a>
+
+                <form action="index.php" method = "POST">
+                <button type = "submit" name = "vinarstvi" class = "menu-button">              
+                    <a href = "vinarstvi.php">
+                    <div class="vice-degust" id = "degust-vice1"  onmouseenter = "degOn1()" onmouseleave = "degOff1()">
+                        <div class="vice-left-degust" id = "nav4-btn1"></div>
+                        <div class="vice-stred-degust" id = "nav4-btn2">Více</div>
+                        <div class="vice-right-degust" id = "nav4-btn3"></div>
+                    </div>
+                    </a>
+                </button>
+                </form>
 
             
         </div>
@@ -112,31 +70,154 @@
         </div>
     </div>
 
-    
 
+    <div class="degustace-content1">
+        <div class="vinarstvi-nadpis">
+            <h2>Degustace</h2>
+            Velké Bílovice jsou plné tradic, folklóru a dobrého vína.<br>
+            Objevte i vy kouzlo našeho kraje.
+        </div>
+        
+        <div class="deg-cont1-pic">
+            <img src = "fotky-degustace/degustace-flasky.png" class = "pic-deg-cont1">
+        </div>
 
+        <div class="deg-cont1-footer">
+            Vinotéka je součástí vinařství, kde se může každý stavit pro víno nejlépe po telefonické dohodě, celoročně od 8:00 do 16:00hod.<br> Objednávky příjímáme na telefonním čísle +420 606 715 417.<br><br>
 
-    <div class="map-container">
-        <div class="help-map">
-            <div class="text-mapa">
-                <img src = "vinarstvi/logoTibor.png" class = "text-mapa-logo"><br>
-                <div class="mapa-adresa">
-                    Tibor Zapletal<br>
-                    Ke Kapličce<br>
-                    69102, Velké Bílovice<br>
-                    Česká Republika<br><br>
-                </div>
-                <div class="mapa-kontakt">
-                    tibor@vinarstvi.cz<br>
-                    +420 606 715 417
-                </div>
-            </div>
-            <img src = "vinarstvi/mapa.png" class = "mapa">
+                <form action="index.php" method = "POST">
+                <button type = "submit" name = "vinarstvi" class = "menu-button">              
+                    <a href = "vinarstvi.php">
+                    <div class="vice-degust" id = "degust-vice1"  onmouseenter = "degOn2()" onmouseleave = "degOff2()">
+                        <div class="vice-left-degust" id = "nav5-btn1"></div>
+                        <div class="vice-stred-degust" id = "nav5-btn2">Více</div>
+                        <div class="vice-right-degust" id = "nav5-btn3"></div>
+                    </div>
+                    </a>
+                </button>
+                </form>
+
+            
         </div>
     </div>
-    <footer>
-        © 2021 | www.vinozapletal.cz
-    </footer>
+
+    <div class="degustace-prohlidka">
+        <div class="prohlidka-nadpis">
+            <h2>Degustace s prohlídkou</h2>
+            V příjemném prostředí našich dvou poměrně členitých sklepů můžete strávit příjemný večer u dobrého vína a moravského pohoštění.
+            Sklepy byly stavěny po tři generace a k dispozici je posezení pro 50 lidí.
+        </div>
+
+        <div class="prohlidka-content-container">
+            <div class="prohlidka-content">
+                <b>Jedu kolem</b>
+                Když jsme ve sklepě
+                <h2>300 Kč za osobu</h2>
+                <ul class = "ul-degustace">
+                    <li class = "li-degustace">Degustace 8 přívlastkových vín</li>
+                    <li class = "li-degustace">Prohlídka sklepa</li>
+                    <li class = "li-degustace">Sýr a pečivo</li>
+                    <li class = "li-degustace">90 min</li>
+                    <li class = "li-degustace">Od 4 osob</li>
+                </ul>
+            </div>
+            <div class="prohlidka-content">
+                <b>Přijdu pokoštovat</b>
+                Na objednání
+                <h2>600 Kč za osobu</h2>
+                <ul class = "ul-degustace">
+                    <li class = "li-degustace">Degustace 12 přívlastkových vín</li>
+                    <li class = "li-degustace">Prohlídka sklepa a vinařství</li>
+                    <li class = "li-degustace">Moravské prkno</li>
+                    <li class = "li-degustace">Sýr a škvarkové pomazánky</li>
+                    <li class = "li-degustace">3 hodiny</li>
+                    <li class = "li-degustace">Od 8 osob</li>
+                </ul>
+            </div>
+            <div class="prohlidka-content">
+                <b>Pokoštuju a posedím</b>
+                Na objednání
+                <h2>Individuální degustace</h2>
+                <ul class = "ul-degustace">
+                    <li class = "li-degustace">Degustace 12 přívlastkových vín</li>
+                    <li class = "li-degustace">Prohlídka sklepa a vinařství</li>
+                    <li class = "li-degustace">Moravské prkno</li>
+                    <li class = "li-degustace">Sýrové prkno</li>
+                    <li class = "li-degustace">5 hodiny</li>
+                    <li class = "li-degustace">Od 8 do 20 osob</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="prohlidka-footer">
+            <b>Pro objednávky degustací volejte +420 606 715 417</b><br>
+            Těšíme se na vás!
+        </div>
+
+    </div> 
     
-</body>
-</html>
+    <div class="degustace-ubytovani-container">
+        <div class="degust-ubytovani-redirect">
+            <h1 class = "degust-ubytovani-btn-nadpis">Ubytování</h1>
+            <form action="index.php" method = "POST">
+            <button type = "submit" name = "ubytovani" class = "menu-button">  
+            <a>
+                <div class="vice eshop-vice">
+                    <div class="vice-left shopleft degust-left"></div>
+                    <div class="shopstred degust-stred">Chci si vybrat ubytování</div>
+                    <div class="vice-right shopright degust-right"></div>
+                </div>
+            </a>
+            </button>
+            </form>
+        
+        </div>
+        <div class="degust-ubytovani1"></div>
+        <div class="degust-ubytovani2"></div>
+        <div class="degust-ubytovani3"></div>
+
+    </div>
+
+
+    <div class="degustace-patky">
+        <div class="patek-pic-container">
+            <img src = "fotky-degustace/patek-pic.png" class = "patek-pic">
+        </div>
+        <div class="patek-text">
+            <h2 class = "patek-nadpis">Hudební pátky a gastro večery</h2>
+            Na 4 hektarech obděláváme vinici v ekologickém režimu a snažíme se, abychom získlali
+            co nejkvalitnějsí hrozen při co nejmenším zatížení přírody. Proto ve vinici nepoužíváme žádné 
+            pesticidy ani herbicidy a všechny vinice jsou kompletně zatravněny.
+
+            <form action="index.php" method = "POST">
+                <button type = "submit" name = "vinarstvi" class = "menu-button">  
+                <a>
+                    <div class="vice eshop-vice">
+                    <div class="vice-left shopleft patek-left"></div>
+                    <div class="shopstred patek-stred">Mám zájem</div>
+                    <div class="vice-right shopright patek-right"></div>
+                    </div>
+                </a>
+                </button>
+            </form>
+
+        </div>
+    </div>
+
+<div class="swiper">
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+            <img class = "img1" src = "fotky-degustace/zapletalovic-11.png">
+            <img class = "img2" src = "fotky-degustace/zapletalovic-16.png">
+            <img class = "img3" src = "fotky-degustace/zapletalovic-52.png">
+        </div>
+    </div>
+   
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+</div>
+
+
+

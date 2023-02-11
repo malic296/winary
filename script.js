@@ -13,7 +13,6 @@ function krajina(){
 
 
 
-
 function shrink1(){
     document.getElementById('menu-item-id1').classList.toggle('shrink');
     document.getElementById('menu-item-id1').classList.remove('larger');
@@ -228,6 +227,25 @@ function degOff1(){
     document.getElementById('nav4-btn2').classList.remove('deg-gold');
     document.getElementById('nav4-btn3').classList.toggle('deg-white');
     document.getElementById('nav4-btn3').classList.remove('deg-gold');
+}
+
+function degOn2(){
+    document.getElementById('nav5-btn1').classList.toggle('deg-gold');
+    document.getElementById('nav5-btn1').classList.remove('deg-white');
+    document.getElementById('nav5-btn2').classList.toggle('deg-gold');
+    document.getElementById('nav5-btn2').classList.remove('deg-white');
+    document.getElementById('nav5-btn3').classList.toggle('deg-gold');
+    document.getElementById('nav5-btn3').classList.remove('deg-white');
+    
+}
+
+function degOff2(){
+    document.getElementById('nav5-btn1').classList.toggle('deg-white');
+    document.getElementById('nav5-btn1').classList.remove('deg-gold');
+    document.getElementById('nav5-btn2').classList.toggle('deg-white');
+    document.getElementById('nav5-btn2').classList.remove('deg-gold');
+    document.getElementById('nav5-btn3').classList.toggle('deg-white');
+    document.getElementById('nav5-btn3').classList.remove('deg-gold');
 }
 
 
