@@ -12,7 +12,36 @@
         Příběh našich vín se začal psát na nejlépe položených velkobílovických vinicích - Panské, Haňby nebo Úlehle. Tam pěstovali vinohrad už naši stařečci a pro nás je poslání v této rodinné tradici pokračovat.
     </div>
 
-    <div class="vinarstvi-nadpis">ZDE BUDE VIDEO</div>
+
+
+
+    <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><video width="100%" height="auto" controls><source src="fotky-vinarstvi/videa/video1.mp4" type="video/mp4"></video></div>
+        <div class="swiper-slide"><video width="100%" height="auto" controls><source src="fotky-vinarstvi/videa/video2.mp4" type="video/mp4"></video></div>
+        <div class="swiper-slide"><video width="100%" height="auto" controls><source src="fotky-vinarstvi/videa/video3.mp4" type="video/mp4"></video></div>
+        <div class="swiper-slide"><video width="100%" height="auto" controls><source src="fotky-vinarstvi/videa/video4.mp4" type="video/mp4"></video></div>
+        <div class="swiper-slide"><video width="100%" height="auto" controls><source src="fotky-vinarstvi/videa/video5.mp4" type="video/mp4"></video></div>
+        <div class="swiper-slide"><video width="100%" height="auto" controls><source src="fotky-vinarstvi/videa/video6.mp4" type="video/mp4"></video></div>
+        
+        ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+</div>
+
+
+
+
 
     <div class="vinarstvi-nadpis">
         <h2>Moderní technologie<br> v poctivých rukách</h2>

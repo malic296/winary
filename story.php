@@ -14,9 +14,38 @@
     </div>
 </div>
 
-<div class="historie-swipes">
-    work in progress
+
+
+
+<!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide swiper-slide-story"><img width="65%" height="auto" src = "fotky-pribeh/old1.png"></div>
+        <div class="swiper-slide swiper-slide-story"><img width="65%" height="auto" src = "fotky-pribeh/old2.png"></div>
+        <div class="swiper-slide swiper-slide-story"><img width="65%" height="auto" src = "fotky-pribeh/old3.png"></div>
+        <div class="swiper-slide swiper-slide-story"><img width="65%" height="auto" src = "fotky-pribeh/old4.png"></div>
+        <div class="swiper-slide swiper-slide-story"><img width="65%" height="auto" src = "fotky-pribeh/old5.png"></div>
+        
+        ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
 </div>
+
+
+
+
+
+
 
 <div class="story-citat">
     <div class="citat-text">

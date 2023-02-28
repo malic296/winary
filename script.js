@@ -78,6 +78,14 @@ function larger8(){
     document.getElementById('menu-item-id8').classList.toggle('larger');
     document.getElementById('menu-item-id8').classList.remove('shrink');
 }
+function shrink9(){
+    document.getElementById('menu-item-id9').classList.toggle('shrink');
+    document.getElementById('menu-item-id9').classList.remove('larger');
+}
+function larger9(){
+    document.getElementById('menu-item-id9').classList.toggle('larger');
+    document.getElementById('menu-item-id9').classList.remove('shrink');
+}
 
 
 function cernazlata1(){

@@ -44,6 +44,11 @@ body{
     font-family: 'Roboto', sans-serif;
     color: rgb(178,178,178);
 }
+.header-telefon{
+    width: 140px;
+    display: flex;
+    
+}
 ul{
     display: flex;
     justify-content: center;
@@ -659,15 +664,23 @@ align-items: center;
 
 .mapa-adresa{
     color: white;
-    font-size: 30px;
+    font-size: 18px;
     text-align: center;
 
 }
 
 .mapa-kontakt{
     color: white;
-    font-size: 30px;
+    font-size: 18px;
     text-align: center;
+}
+
+.mapa-nadpis{
+    color:rgb(199,164,60);
+    font-size: 35px;
+}
+.mapa-podnadpis{
+    color:rgb(199,164,60);
 }
 
 
@@ -1542,9 +1555,12 @@ footer{
 
 .swiper-slide{
     display: flex;
-    flex-direction: row;
+    flex-direction: row;  
 }
-
+.swiper-slide-story{ 
+    justify-content: center;
+    align-items: center;
+}
 .img1{width:30%;}
 .img2{width:40%;}
 .img3{width:30%;}
@@ -1689,6 +1705,8 @@ footer{
 
 
 
+
+
 /*MEDIA QUERIES-------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width:700px){
     .citat-nadpis{
@@ -1760,6 +1778,17 @@ footer{
         padding: 0px;
         padding-bottom: 10px;
 
+    }
+    .mapa-adresa{
+        font-size: 7px;   
+    }
+    
+    .mapa-kontakt{
+        font-size: 7px;
+    }
+    
+    .mapa-nadpis{
+        font-size: 10px;
     }
 }
 @media screen and (max-width:900px){
@@ -1999,13 +2028,14 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-left:0px;
+        padding-left:50px;
         width: 100%;
     }
     #header{
         flex-direction: row;
         align-items: center;
     }
+
     /*MENU OVER-------------------------------------------------------------------------------------------------------------------------------------------------*/
  
     .text-krajina{
@@ -2068,12 +2098,9 @@ footer{
         height:auto;
     }
     .text-mapa-logo{width:50px; height:50px;}
-    .mapa-adresa{font-size:7px;}
-    .mapa-kontakt{font-size:7px;}
 
 }
-
-@media screen and (max-width:1000px) and (min-width:451px){
+@media screen and (min-width:451px) and (max-width:1200px){
     .patek-text{
         font-size:17px;
         margin:0px;
@@ -2160,17 +2187,17 @@ footer{
         max-height: 20px;
         height:100%;
         overflow: visible;
-        margin-bottom: 550px;
+        margin-bottom: 600px;
     }
     #sidebar.active{
         flex-direction: column;
-        top:250px;
+        top:300px;
         height: 50px;
     }
     
     #toggle-btn.posun{
         position: absolute;
-        top: 500px;
+        top: 570px;
     }
 
     .logo-menu{
@@ -2184,6 +2211,7 @@ footer{
     #sidebar{
         height:70px;
         flex-direction: column;
+        top:-300px;
     }
     .kontakt-menu{
         display: flex;
@@ -2247,8 +2275,9 @@ footer{
     }
 
     .text-mapa-logo{width:100px; height:100px;}
-    .mapa-adresa{font-size:15px;}
-    .mapa-kontakt{font-size:15px;}
+    .mapa-adresa{font-size:9px;}
+    .mapa-kontakt{font-size:9px;}
+    .mapa-nadpis{font-size: 17px;}
     .blur-all{
         flex-direction: column;
     }
@@ -2259,7 +2288,7 @@ footer{
 
 
 }
-@media screen and (min-width:1001px) and (max-width:1300px){
+@media screen and (min-width:1201px) and (max-width:1500px){
     .patek-text{
         font-size:17px;
         margin:0px;
@@ -2375,7 +2404,7 @@ footer{
     
 
 }
-@media screen and (min-width:1301px){
+@media screen and (min-width:1501px){
     #toggle-btn{
         background: transparent;
         width:0px;
@@ -2417,7 +2446,9 @@ footer{
     }
     .logo-menu{
         transform: translateX(50px);
+        margin-left: 100px;
     }
+
     /*MENU OVER-------------------------------------------------------------------------------------------------------------------------------------------------*/
     .text-krajina{
         display: flex;

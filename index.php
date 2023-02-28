@@ -24,7 +24,6 @@
     //include header
     include 'header.php'; 
     
-
     //include těla + visuální označení stránky kde se uživatel vyskytuje
     if(isset($_POST["domu"])){
         include 'domu.php';
@@ -43,16 +42,20 @@
         echo "<script>document.getElementById('degustace').classList.toggle('selected')</script>";
     }
     else if(isset($_POST["eshop"])){
-        include 'Eshop.php';
+        include 'eshop.php';
         echo "<script>document.getElementById('eshop').classList.toggle('selected')</script>";
     }
     else if(isset($_POST["kontakt"])){
-        include 'Kontakt.php';
+        include 'kontakt.php';
         echo "<script>document.getElementById('kontakt').classList.toggle('selected')</script>";
     }
     else if(isset($_POST["ubytovani"])){
         include 'ubytovani.php';
         echo "<script>document.getElementById('ubytovani').classList.toggle('selected')</script>";
+    }
+    else if(isset($_POST["vina"])){
+        include 'vina.php';
+        echo "<script>document.getElementById('vina').classList.toggle('selected')</script>";
     }
     else{
         include 'domu.php';
@@ -61,7 +64,6 @@
     
     
     //include patičky
-
     include 'footer.php'; 
 
     //script na swipování 
