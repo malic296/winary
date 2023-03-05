@@ -61,7 +61,7 @@
 
         </div>
 
-        <div id="toggle-btn" onclick="show(), move(), btn(), krajina()">
+        <div id="toggle-btn" onclick="show(), move(), btn()">
 
             <span></span>
 

@@ -7,9 +7,9 @@ function move(){
 function btn(){
     document.getElementById('toggle-btn').classList.toggle('posun');
 }
-function krajina(){
-    document.getElementById('text-krajina').classList.toggle('krajinaPosun');
-}
+//function krajina(){
+    //document.getElementById('text-krajina').classList.toggle('krajinaPosun');
+//}
 
 
 

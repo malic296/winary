@@ -24,7 +24,8 @@
     </div>
     
     <footer>
-        © 2021 | www.vinozapletal.cz
+        © 2021 | www.vinozapletal.cz <br>
+        <a href = "https://www.herocomp.cz/" target = "__blank">Developed by HERO Computers s.r.o.</a>
 
 
     </footer>

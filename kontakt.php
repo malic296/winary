@@ -20,7 +20,7 @@
 
             <div class="dotaz-firma">
 
-                <h2>Firma</h2>
+                <h2 class = "kontakt-nadpis">Firma</h2>
 
                 <span class = "mapa-podnadpis">(fakturační adresa)</span>
 
@@ -38,7 +38,7 @@
 
             <div class="dotaz-vinarstvi">
 
-                <h2>Vinařství</h2>
+                <h2 class = "kontakt-nadpis">Vinařství</h2>
 
                 <span class = "mapa-podnadpis">(dodací adresa a provozovna)</span>
 
@@ -60,15 +60,15 @@
 
             <h2 class = "dotaz-nadpis">Máte dotaz?</h2>
 
-            <form method = "POST" class = "form-dotaz" action = "index.php">
+            <form method = "POST" class = "form-dotaz" action = "send.php">
 
-                <input class = "input-dotaz" type = "text" placeholder = "Vaše jméno">
+                <input class = "input-dotaz" type = "text" placeholder = "Vaše jméno" name = "kontaktJmeno">
 
-                <input class = "input-dotaz" type = "text" placeholder = "Váš e-mail">
+                <input class = "input-dotaz" type = "text" placeholder = "Váš e-mail" name = "email" required>
 
-                <input class = "input-dotaz" type = "text" placeholder = "Telefon">
+                <input class = "input-dotaz" type = "text" placeholder = "Telefon"  name = "kontaktTelefon">
 
-                <textarea id = "textbox" class = "text-dotaz" placeholder = "Zde napište svou zpráva..." maxlength = "180"></textarea>
+                <textarea id = "textbox" class = "text-dotaz" placeholder = "Zde napište svou zpráva..." maxlength = "180" name = "kontaktZprava" required></textarea>
 
                 <div class="letter-counter" id = "lettercounter"><span id = "count">0</span>/180 znaků</div>
 
@@ -80,7 +80,7 @@
 
                         <div class="dotaz-but-left"></div>
 
-                        <input type = "submit" value = "Odeslat" class = "dotaz-submit" name = "domu">
+                        <input type = "submit" value = "Odeslat" class = "dotaz-submit" name = "odeslaniDotazu">
 
                         <div class="dotaz-but-right"></div>
 

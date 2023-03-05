@@ -57,6 +57,7 @@
         include 'vina.php';
         echo "<script>document.getElementById('vina').classList.toggle('selected')</script>";
     }
+
     else{
         include 'domu.php';
         echo "<script>document.getElementById('domu').classList.toggle('selected')</script>";

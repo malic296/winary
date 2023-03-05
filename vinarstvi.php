@@ -16,28 +16,35 @@
 
 
     <div class="swiper">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide"><video width="100%" height="auto" controls><source src="fotky-vinarstvi/videa/video1.mp4" type="video/mp4"></video></div>
-        <div class="swiper-slide"><video width="100%" height="auto" controls><source src="fotky-vinarstvi/videa/video2.mp4" type="video/mp4"></video></div>
-        <div class="swiper-slide"><video width="100%" height="auto" controls><source src="fotky-vinarstvi/videa/video3.mp4" type="video/mp4"></video></div>
-        <div class="swiper-slide"><video width="100%" height="auto" controls><source src="fotky-vinarstvi/videa/video4.mp4" type="video/mp4"></video></div>
-        <div class="swiper-slide"><video width="100%" height="auto" controls><source src="fotky-vinarstvi/videa/video5.mp4" type="video/mp4"></video></div>
-        <div class="swiper-slide"><video width="100%" height="auto" controls><source src="fotky-vinarstvi/videa/video6.mp4" type="video/mp4"></video></div>
-        
-        ...
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><div class="swiper-text"><h2 class = "nadpis-obdobi-vinarstvi">Jaro</h2></div><iframe width="100%" height="700px" src="https://www.youtube.com/embed/sVpf7FdMDeo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+            <div class="swiper-slide"><div class="swiper-text"><h2 class = "nadpis-obdobi-vinarstvi">Léto</h2></div><iframe width="100%" height="700px" src="https://www.youtube.com/embed/uccJUcO_aIQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+            <div class="swiper-slide"><div class="swiper-text"><h2 class = "nadpis-obdobi-vinarstvi">Podzim</h2></div><iframe width="100%" height="700px" src="https://www.youtube.com/embed/ydsJV5GUmGU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+            <div class="swiper-slide"><div class="swiper-text"><h2 class = "nadpis-obdobi-vinarstvi">Zima</h2></div><iframe width="100%" height="700px" src="https://www.youtube.com/embed/0saSQT_dScE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+            <div class="swiper-slide"><div class="swiper-text"><h2 class = "nadpis-obdobi-vinarstvi">Jaro</h2></div><iframe width="100%" height="700px" src="https://www.youtube.com/embed/D1TgGaV7z8w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+            <div class="swiper-slide"><div class="swiper-text"><h2 class = "nadpis-obdobi-vinarstvi">Léto</h2></div><iframe width="100%" height="700px" src="https://www.youtube.com/embed/gDscNxbsiek" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+            <!--
+            TADY V KOMENTU JSOU VIDEA ALE NENÍ TO Z YTB (NAHOŘE TO Z YTB JE)
+            <div class="swiper-slide"><div class="swiper-text"><h2 class = "nadpis-obdobi-vinarstvi">Léto</h2></div><video width="100%" height="auto" controls><source src="fotky-vinarstvi/videa/video2.mp4" type="video/mp4"></video></div>
+            <div class="swiper-slide"><div class="swiper-text"><h2 class = "nadpis-obdobi-vinarstvi">Podzim</h2></div><video width="100%" height="auto" controls><source src="fotky-vinarstvi/videa/video3.mp4" type="video/mp4"></video></div>
+            <div class="swiper-slide"><div class="swiper-text"><h2 class = "nadpis-obdobi-vinarstvi">Zima</h2></div><video width="100%" height="auto" controls><source src="fotky-vinarstvi/videa/video4.mp4" type="video/mp4"></video></div>
+            <div class="swiper-slide"><div class="swiper-text"><h2 class = "nadpis-obdobi-vinarstvi">Jaro</h2></div><video width="100%" height="auto" controls><source src="fotky-vinarstvi/videa/video5.mp4" type="video/mp4"></video></div>
+            <div class="swiper-slide"><div class="swiper-text"><h2 class = "nadpis-obdobi-vinarstvi">Léto</h2></div><video width="100%" height="auto" controls><source src="fotky-vinarstvi/videa/video6.mp4" type="video/mp4"></video></div>
+            -->
+            ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
     </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
-</div>
 
 
 

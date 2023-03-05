@@ -124,7 +124,7 @@ a{
     width:100%;
     background: transparent;
     position: absolute;
-    top: -250px;
+    top: -300px;
     transition: .4s;
 }
 
@@ -689,10 +689,11 @@ align-items: center;
 /*FOOTER ----------------------------------------------------------------------------*/
 
 footer{
-    height:50px;
+    height:60px;
     background-color: rgb(52,52,52);
     color:rgb(136,136,136);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     font-family: 'Roboto', sans-serif;
     align-items: center;
@@ -728,6 +729,7 @@ footer{
 }
 .vice-right{
     width:25px;
+    height:30px;
     border: 2px solid rgb(199,164,60);
     border-top-right-radius: 100%;
     border-bottom-right-radius: 100%;
@@ -839,7 +841,9 @@ footer{
 /*KONTAKT.PHP ---------------------------------------------------------------------------------------------------------------*/
 /*KONTAKT.PHP ---------------------------------------------------------------------------------------------------------------*/
 /*KONTAKT.PHP ---------------------------------------------------------------------------------------------------------------*/
-
+.kontakt-nadpis{
+    margin-bottom:0px;
+}
 .header-kontakt{
     position: relative;
     width:100%;
@@ -1080,6 +1084,10 @@ footer{
     width: fit-content;
     right:20%;
     top: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .header-podnadpis-vin{
@@ -1546,6 +1554,8 @@ footer{
     height: fit-content;
     margin-bottom:20px;
     margin-top:100px;
+    overflow: visible;
+    position: relative;
 
 }
 .swiper-slide img{
@@ -1555,8 +1565,23 @@ footer{
 
 .swiper-slide{
     display: flex;
-    flex-direction: row;  
+    flex-direction: row; 
+    height: fit-content; 
 }
+
+.swiper-text{
+    position: absolute;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nadpis-obdobi-vinarstvi{
+    background-color: transparent;
+}
+
 .swiper-slide-story{ 
     justify-content: center;
     align-items: center;
@@ -1683,9 +1708,99 @@ footer{
 
 
 
+/*VINA.PHP ---------------------------------------------------------------------------------------------------------------*/
+/*VINA.PHP ---------------------------------------------------------------------------------------------------------------*/
+/*VINA.PHP ---------------------------------------------------------------------------------------------------------------*/
 
 
+.vina-nadpis{
+    width: 60%;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom:100px;
+}
+.vina-podnadpis{
+    font-size: 22px;
+    width:60%;
+    font-family: 'Roboto', sans-serif;
+}
 
+
+.flaska-1-cast{
+    width:60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom:80px;
+}
+
+.flaska-obr{
+    width: 100%;
+    height: auto;
+    max-width: 550px;
+}
+
+.flaska-txt{
+    text-align: center;
+    flex-wrap:wrap;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.slipka-txt{
+    text-align: center;
+    flex-wrap: wrap;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    width:60%;
+    margin-top:30px;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+.silver{
+    color: silver;
+}
+
+.gold-nadpis{
+    color: rgb(199,164,60);;
+}
+
+.black{
+    color: black;
+}
+
+.slipka-container{
+    margin-bottom:80px;
+    margin-top:100px;
+}
+
+.nav4-4{
+    margin-top:30px;
+}
+
+.vice-stred-slipka{
+    width:150px;
+    border-color: black;
+    color: black;
+}
+.vice-left-slipka{
+    border-color: black;
+}
+
+.vice-right-slipka{
+    border-color: black;
+}
+
+.slipka-btn:hover{
+    transform: scale(1.05);
+    transition: .4s;
+}
 
 
 
@@ -1790,6 +1905,7 @@ footer{
     .mapa-nadpis{
         font-size: 10px;
     }
+
 }
 @media screen and (max-width:900px){
     .citat-stred{
@@ -1898,13 +2014,15 @@ footer{
     .shopstred{
         font-size:15px;
         width:80px;
-        height: 15px;
+        height: 30px;
     }
     .shopright{
-        height: 15px; width: 10px;
+        height: 30px; 
+        width: 10px;
     }
     .shopleft{
-        height: 15px; width: 10px;
+        height: 30px; 
+        width: 10px;
     }
 }
 @media screen and (max-width:450px){
@@ -1999,17 +2117,17 @@ footer{
         max-height: 20px;
         height:100%;
         overflow: visible;
-        margin-bottom: 515px;
+        margin-bottom: 600px;
     }
     #sidebar.active{
         flex-direction: column;
-        top:250px;
+        top:300px;
         height: 50px;
     }
     
     #toggle-btn.posun{
         position: absolute;
-        top: 480px;
+        top: 560px;
     }
 
     .logo-menu{
@@ -2028,7 +2146,7 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-left:50px;
+        padding-left:0px;
         width: 100%;
     }
     #header{
